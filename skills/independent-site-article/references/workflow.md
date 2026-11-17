@@ -1,113 +1,117 @@
-# 阶段、交接与门槛
+# Stages, handoffs, and acceptance criteria
 
-阶段和状态是内部编辑约定，不是 Google 排名公式。规则原文在 `policy-sources.md`。
+These stages are editorial conventions, not a Google ranking formula. See `policy-sources.md` for primary guidance.
 
-## 任务建档
+## Assignment
 
-每篇建立独立目录，保存 brief、research、sources.csv、claims.csv、drafts、reviews、article 和 publishing。
-不要把用户稿件、客户资料或账号凭证写进本技能安装目录。
+Create a project directory for each article. Keep the brief, research, source and claim records, draft versions, reviews, final manuscript, and publishing record there. Do not store customer material in the installed Skill.
 
-确认任务模式：
+Choose the requested mode:
 
-- 新文：主题明确后研究，确定标题和大纲再写。
-- 改稿：先读原文，保留有效内容，按目标定点修改。
-- 只审核：给问题和证据，不默认重写。
-- 只要大纲：交付大纲及来源，不强行推进全文生产。
+- New article: research the topic, agree on direction, then write.
+- Revision: read the existing article and preserve useful material.
+- Review only: report findings without rewriting unless requested.
+- Outline only: deliver an outline and evidence, not a full manuscript.
 
-完整文章必需主题、语言和足够业务背景。读者／市场缺失且会改变结论时先问；其他资料可以边研究边补。
+English is the default for content and working documents. An explicit language request overrides it. Ask about missing context when it would change the work; do not require every optional brief field.
 
-## 研究
+## Research and outline
 
-1. 核对官方规则及更新记录，记录日期。无法访问时标明时效未核实。
-2. 读取网站、相关页面和已知文章，检查是否重复或适合更新原页。
-3. 按目标地区／语言检索并读取原始资料；记录真实查询条件。
-4. 精确 SERP 数据与普通搜索样本分开。没有搜索量、难度、排名数据则留空。
-5. 先看代表性结果，按需要补充；政府、标准、论坛、视频可能解释意图，不机械过滤。
-6. 记录读者问题、可靠事实和可兑现的新增帮助，不照搬竞争者结构。
+1. Check relevant official guidance and document updates. Record the date and any access limits.
+2. Read the website and existing content. Decide whether to update, consolidate, or create a page.
+3. Research the target market and language. Record actual query conditions.
+4. Distinguish exact SERP data from general search samples. Missing volume, difficulty, or rank data stays missing.
+5. Read representative results and primary sources. Government, standards, forum, and video results may explain intent; do not exclude them mechanically.
+6. Identify reader questions and the additional help this article can credibly provide.
 
-每个来源记录实际阅读范围、日期、发布者、适用地域与限制。用户内部资料注明提供者和公开许可，不冒充外部验证。
+Record what each source supports, when it was read, and its scope. Internal material needs a provider, version, and permission to disclose.
 
-## 大纲和初稿
+The outline connects each section to a reader question, evidence, and a useful conclusion. Verify internal-link targets. Do not prescribe fixed word counts, keyword density, paragraph length, or FAQ counts.
 
-大纲逐节回答：读者需要什么、要解释什么、依据在哪里、本站能提供什么。
-可加入真实选型逻辑、条件、对比、案例和相关内链。链接未核实只能称候选，不能编 URL。
-不固定字数、关键词次数、段落长度和 FAQ 数量。
+## Draft v1
 
-作者依据证据写 v1。重要数字、比较、标准、产品能力、案例、图注和 CTA 进入主张台账。
-缺少非核心论据可删除或缩小表述；核心论据缺失则请求材料。
-没有真实经历、作者资历和测试数据，不为“原创”而制造。
-来源在读者需要的位置可访问，内部编辑记录不混入正文。
+The writer uses the brief, outline, and evidence. Put important figures, specifications, standards, comparisons, cases, captions, and commercial claims in the claim record.
 
-## v1 审查和 v2 修订
+Answer the main question before adding conditions, reasoning, and next steps. Preserve technical terms that matter to the reader.
 
-事实与搜索审查可并行，只提问题，作者统一处理，防止覆盖。
+Remove unsupported nonessential claims or narrow them to what the evidence supports. Missing evidence for a central conclusion blocks that conclusion. Do not invent first-hand experience, credentials, measurements, or customer stories.
 
-事实检查包含来源是否真正支持原句、数值单位、时间地域、型号版本、样本、否定、条件和因果。
-结论用支持／部分支持／冲突／缺少证据／不适用。关键安全或专业主张需要适合的资料或专业审阅。
+Keep citations useful and accessible. Internal review notes do not belong in publishable prose.
 
-搜索检查包含意图、业务匹配、原创帮助、结构与实体含义、标题摘要、内链和真实技术证据。
-第三方工具的分数与公式只作建议，不能抵消关键错误。
-Google、ChatGPT、Perplexity 分开，不把训练许可当作搜索索引。
+## Review v1 and revise v2
 
-作者对问题记录已改／有证据不采用／缺资料，形成 v2。新增或实质改变事实的部分回事实核查；意图和结构改变回搜索审核。
-阻断问题关闭后再进入语言编辑。
+Fact and search reviewers may inspect the same fixed draft in parallel. They submit findings; the writer makes the changes.
 
-## 语言编辑 v3
+Fact review checks whether the source supports the actual wording, including units, dates, jurisdiction, model, version, sample, comparison, negation, and causality. Use supported, partially supported, conflicting, unsupported, or not applicable.
 
-英文实际读取并使用 humanizer；中文实际读取并使用 humanizer-zh。指定项目见入口。
-没有对应技能时报告，不能声称普通改写等同已执行。
-按真实作者样本与文体自然表达，保留信息、引用和确定程度。
-保持术语准确、图表数字和必要限定，不强行口语化，不用虚构故事、错拼或去掉引用“骗过检测”。
-记录路径、版本或可得哈希、完整或部分处理范围，以及重要改动。
-双语分别编辑和核对，不能让一个语言继承另一语言的结论。
+High-risk technical or safety claims need suitable evidence or expert review. A manufacturer's statement is not an independent test.
 
-## 独立终审
+Search review checks intent, business relevance, original help, structure, entity meaning, titles, summaries, links, and technical evidence. Scores and formulas cannot offset factual problems.
 
-输入是 v3、v2、任务书、证据、台账和问题单。审阅者实际重新检查关键来源，不沿用作者的自报结论。
+Record changes by issue ID: fixed, not adopted with evidence, or awaiting information. Recheck new factual claims and substantial structural changes. Close blocking issues before language editing.
 
-必须检查：
+## Language editing v3
 
-- 核心问题是否解决，承诺的新价值是否兑现。
-- 数字、条件、否定、比较和时间是否在润色中漂移。
-- 标题、摘要、图注、表格、CTA 是否与正文一致。
-- 指定 Humanizer 是否实际执行，是否有未处理范围。
-- 关键问题是否关闭，稿件是否残留内部占位或编造信息。
+Read and execute `humanizer` for English. Use `humanizer-zh` only for explicitly requested Chinese output. The project links are in the Skill entry.
 
-PASS 需要独立执行上下文或其他审阅者。无法委派只能交自审结果，完整流程为 BLOCKED／待独立终审。
-同模型子代理是 AI 审查，不冒充真人或行业专家。
-REWORK 归口修订，受影响阶段复审；两轮仍缺关键证据则交待办，不无限润色。
-文稿改动后不能沿用旧版通过结论。
+If the required editor is missing, report it. Do not call an ordinary rewrite a completed Humanizer pass.
 
-## 冻结和交付
+Match the author's real sample and the content type. Preserve information, citations, units, negation, scope, conditions, dates, and certainty. Do not invent detail to make prose feel specific.
 
-通过后记录路径、版本、执行者、时间和可用哈希。
-交付目标语言正文、H1／SEO title／摘要／slug、图片与内链建议、台账和报告。
-工作稿可留内部标记，公开正文不得残留待核实参数或内部评分。
+Record the actual path, version or available hash, scope, and important edits. Review bilingual output separately. Do not promise detector results.
 
-文稿与技术分开：
+## Independent final review
 
-- PASS／REWORK／BLOCKED：内容流程。
-- TECH_PASS／TECH_REWORK／TECH_NOT_CHECKED：网站实测。
+Inputs: v3, v2, the brief, evidence, claim records, and prior findings. Recheck important sources rather than inheriting an earlier pass.
 
-## 可选 CMS 验收
+Verify:
 
-仅有相应授权时创建草稿、预览、发布或改设置。
-识别 WordPress／Shopify、编辑器、主题和 SEO 插件。保留原 URL 和有效结构，不为文章任务进行无关改版。
+- The reader's task is answered and the promised value is present.
+- Editing did not change figures, conditions, certainty, negation, or attribution.
+- Titles, metadata, captions, tables, and CTA match the manuscript.
+- The specified editor was actually used and coverage limits are disclosed.
+- Blocking findings are closed; no internal placeholders or invented material remain.
 
-必要验收包括目标页面身份、冻结稿一致性、移动端、表格单位、来源链接、目录、图片、公开状态码、正文可访问、索引／摘要限制、canonical 和真实发现路径。
-需要时检查当前 AI 展示控制及搜索爬虫、CDN／WAF。未拿到后台或日志证据就注明，不能凭自己能打开网页断言爬虫可达。
-Schema 根据可见真实内容生成，先查插件重复。不要制造作者、评分、认证或发布日期。
-草稿正常受登录保护，不为验收擅自公开。
+`PASS` requires a separate review context or another reviewer. Without delegation, a useful draft and self-review can be delivered, but the full workflow remains `BLOCKED: independent review pending`.
 
-正常发布要求内容 PASS、必要技术检查 TECH_PASS 和对应授权。
-必要项未检是 TECH_NOT_CHECKED，不能等同未发现问题。用户明确接受具体技术缺口的例外保留未检与授权记录；文稿和事实缺陷不能例外放行。
-只交文章时可止于文稿，清楚标记技术未检。
+A same-model subagent is still AI review, not human or expert review. The final reviewer reports a decision and specific findings rather than silently rewriting and approving its own changes.
 
-## 可选发布后复盘
+Return `REWORK` to the relevant role. Recheck affected stages after revision. Start with two targeted rounds; if central evidence is still missing, report the gap instead of continuing indefinitely.
 
-没有监测任务与数据访问时不声称正在跟踪，也不自动建立定时任务。
-发布、可抓取、索引、曝光、点击、AI 引用和业务结果逐一留证，不互相替代。
-按数据量安排观察期；查询、地区、设备和比较期要一致。
-AI 实测记录平台、时间、语言、问题和引用链接；一次未引用不能证明全平台未收录。
-AI 引荐点击不等于全部 AI 引用，B2B 关注询盘质量，B2C 结合订单及利润。
-记录真实错误、修正和证据再更新流程，不从一次涨跌推导算法规则，不只改日期制造新鲜度。
+## Freeze and deliver
+
+Record the accepted file, version, reviewer, time, and available hash. Substantive changes invalidate the earlier final decision.
+
+Deliver the manuscript, CMS fields, image and link suggestions, source and claim records, and review results separately.
+
+Editorial status: `PASS`, `REWORK`, or `BLOCKED`.
+
+Technical status: `TECH_PASS`, `TECH_REWORK`, or `TECH_NOT_CHECKED`.
+
+Content approval does not prove technical eligibility, indexing, ranking, or AI citation.
+
+## Optional CMS QA
+
+Create drafts, publish, or change settings only within explicit authorization. Identify the CMS, editor, theme, and SEO plugin before changing implementation.
+
+Check page identity, manuscript consistency, mobile readability, tables, units, citations, links, images, public response, body accessibility, canonical, index and snippet controls, and discovery paths.
+
+Check relevant AI-appearance controls, search crawlers, and CDN/WAF behavior where required. Without account, log, or network evidence, record the limit; a successful browser visit does not prove crawler access.
+
+Structured data must match visible facts. Check plugin output before adding markup. Do not fabricate authors, dates, ratings, or certifications.
+
+A protected draft can be normal. Do not publish it merely to test public access.
+
+Normal release requires editorial `PASS`, all required technical checks at `TECH_PASS`, and publishing authorization. An untested requirement remains `TECH_NOT_CHECKED`. Explicit acceptance of specific technical gaps must retain the exception and authorization record. Factual and editorial blockers are not waived this way.
+
+When only an article is requested, stop at delivery and state that technical QA is pending.
+
+## Optional follow-up
+
+Do not imply monitoring or create recurring jobs without a request and available data access.
+
+Publication, crawling, indexing, impressions, clicks, AI citations, and business outcomes are separate observations. Compare matching time windows, queries, countries, and devices.
+
+For AI checks, record platform, time, language, question, cited URL, and evidence. One missing citation does not establish absence from an entire platform. Referral clicks do not measure all citations.
+
+Use qualified inquiries for B2B and appropriate order or margin measures for B2C. Record actual mistakes, corrections, and evidence before updating the workflow. Do not infer an algorithm rule from one traffic change or change dates merely to imply freshness.

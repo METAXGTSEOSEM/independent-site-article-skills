@@ -1,24 +1,24 @@
-# 文章任务书
+# Article brief
 
-- 文章 ID：
-- 网站／业务：
-- 新写／改稿／只审核／仅大纲：
-- 原文或 URL：
-- 主题／关键词：
-- 固定标题／允许研究后拟标题：
-- 输出语言与地区写法：
-- 目标国家、读者及已有知识：
-- B2B／B2C：
-- 阅读任务与业务目标：
-- 已有产品、规格、标准、案例和 FAQ：
-- 可公开的一手材料及许可：
-- 实际作者／专业审阅条件：
-- 品牌声音样本：
-- 禁止承诺和敏感材料：
-- 相关页面／sitemap：
-- 工具与数据访问：
-- 是否允许付费查询、预算：
-- 交付正文／CMS 草稿／发布，授权范围：
-- 合理假设及阻断缺口：
+- Article ID:
+- Website and business:
+- Mode: new article / revision / review only / outline only
+- Original text or URL:
+- Topic or query:
+- Fixed title or permission to propose titles:
+- Output language and locale: English by default
+- Target country and reader:
+- B2B or B2C:
+- Reader task and business goal:
+- Available specifications, standards, cases, and FAQs:
+- Original material and permission to disclose:
+- Actual author and expert-review needs:
+- Voice sample:
+- Prohibited claims and sensitive material:
+- Relevant pages or sitemap:
+- Available tools and account access:
+- Paid research authorization and budget:
+- Scope: manuscript / CMS draft / publishing
+- Assumptions and blocking gaps:
 
-空白表示未知，不能自动补成事实。优先沿用已有项目资料，按任务需要补充。
+Blank fields are unknown. Reuse existing project context and ask only for information that affects the assignment.

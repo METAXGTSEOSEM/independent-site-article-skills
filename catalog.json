@@ -1,0 +1,41 @@
+{
+  "name": "Independent Site SOPs",
+  "version": "1.1.0",
+  "repository": "https://github.com/METAXGTSEOSEM/independent-site-article-skills",
+  "documentation_language": "en",
+  "default_output_language": "en",
+  "modules": [
+    {
+      "id": "independent-site-article",
+      "title": "Articles",
+      "status": "available",
+      "version": "1.1.0",
+      "path": "skills/independent-site-article",
+      "scope": "Blog articles, buying guides, educational content, and existing-article review."
+    },
+    {
+      "id": "independent-site-product-page",
+      "title": "Product pages",
+      "status": "planned",
+      "version": null,
+      "path": null,
+      "scope": "Evidence-based product-page writing and conversion review."
+    },
+    {
+      "id": "independent-site-case-study",
+      "title": "Case studies",
+      "status": "planned",
+      "version": null,
+      "path": null,
+      "scope": "Permission-aware project stories and substantiated outcomes."
+    },
+    {
+      "id": "independent-site-uiux",
+      "title": "UI/UX improvements",
+      "status": "planned",
+      "version": null,
+      "path": null,
+      "scope": "Existing-site design audit, redesign handoff, and implementation QA."
+    }
+  ]
+}

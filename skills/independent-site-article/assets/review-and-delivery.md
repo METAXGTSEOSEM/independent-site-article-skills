@@ -1,56 +1,56 @@
-# 审核与交付记录
+# Review and delivery record
 
-## 固定版本
+## Version
 
-- 文章 ID、任务模式：
-- 稿件路径、版本和可得哈希：
-- 审核阶段、执行者、时间：
-- 独立子代理／其他审阅者／同一助手自审：
-- 规则本次核对日期及限制：
+- Article ID and mode:
+- Draft path, version, and available hash:
+- Review stage, actual reviewer, and time:
+- Execution: independent subagent / another reviewer / same-assistant self-review
+- Policy verification date and limits:
 
-## 问题单
+## Findings
 
-| ID | 原句／位置 | 问题与影响 | 证据／来源 | 优先级 | 责任角色 | 状态与关闭证据 |
+| ID | Passage or location | Issue and impact | Evidence | Priority | Owner | Status and closure evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 
-虚假核心主张、严重误导、关键资料缺失、指定语言编辑或独立终审未完成属于阻断。不要用总分抵消。
+Unsupported central claims, serious misinformation, missing essential evidence, incomplete required editing, and missing independent review block full approval. A total score cannot offset them.
 
-## 语言记录
+## Language editing
 
-- 正文语言：
-- humanizer／humanizer-zh：
-- 指定项目、实际读取路径、版本或哈希：
-- 完整／部分／未执行：
-- 原稿与润色稿：
-- 数字、单位、条件、否定、引用和确定程度对照：
-- 未处理范围及所需资料：
+- Output language:
+- Required editor: humanizer / humanizer-zh
+- Project, actual path, version or hash:
+- Coverage: full / partial / not executed
+- Before and after versions:
+- Check of figures, units, conditions, negation, certainty, and sources:
+- Remaining scope and missing material:
 
-## 结果与发布包
+## Decision and publishing package
 
-- 内容：PASS／REWORK／BLOCKED：
-- 技术：TECH_PASS／TECH_REWORK／TECH_NOT_CHECKED：
-- 同一助手自审不得标独立终审通过：
-- 冻结稿：
-- H1、SEO title、meta description、slug：
-- 摘要、图片和 alt、分类、相关内链、CTA：
-- 来源／主张台账与未核实项：
-- 必要技术检查范围和证据：
-- CMS 与文章身份、稿件一致性、移动端、表格、链接：
-- 响应、canonical、索引／摘要限制、发现路径、适用 AI 展示和爬虫：
-- 实际授权、上传／发布结果：
-- 技术例外的具体缺口、风险与该次授权：
+- Editorial status: PASS / REWORK / BLOCKED
+- Technical status: TECH_PASS / TECH_REWORK / TECH_NOT_CHECKED
+- Independent review completed:
+- Frozen manuscript:
+- H1, SEO title, meta description, and slug:
+- Summary, images and alt text, category, links, and CTA:
+- Source and claim records:
+- Untested requirements:
+- Page identity, manuscript consistency, mobile layout, tables, and links:
+- Response, canonical, index/snippet controls, discovery, and applicable AI access:
+- Authorization and actual CMS actions:
+- Accepted technical exceptions, risks, and specific authorization:
 
-文稿与事实阻断不得按技术例外放行。模板选项不是实际结果，未检明确写未检。
+Self-review is not an independent pass. Technical exceptions do not waive editorial or factual blockers. Template options are not actual findings.
 
-## 按需后续记录
+## Optional follow-up
 
-- 发布 URL／时间、索引证据：
-- 观察期与比较口径：
-- 搜索曝光／点击及查询：
-- AI 平台、时间、语言／地区、问题、引用链接和实测证据：
-- 引荐点击及无法识别的部分：
-- 询盘质量／订单与业务反馈：
-- 实际变化、其他影响、下轮假设：
-- 真正发生的错误、修正和验证证据：
+- Published URL and time; indexing evidence:
+- Observation and comparison windows:
+- Search impressions, clicks, and queries:
+- AI platform, time, language, country, question, citation, and evidence:
+- Referral clicks and attribution limits:
+- Qualified inquiries, orders, or relevant business feedback:
+- Changes, other influences, and next hypothesis:
+- Actual mistake, correction, and verification:
 
-没有数据访问或后续任务就不填结果，不声称自动监控。
+Without data access or a follow-up assignment, leave observations unknown and do not imply monitoring.

@@ -1,77 +1,171 @@
-# 独立站文章生产与审核 Skill
+<p align="center">
+  <img src="docs/assets/cover.svg" alt="Independent Site SOPs: a modular library for content, commerce, and website experience workflows." width="1200">
+</p>
 
-一个主技能，协调研究、写作、事实核查、SEO／AI 搜索审核、指定 Humanizer 和独立终审。
+<p align="center">
+  <strong>Research. Create. Verify. Improve.</strong><br>
+  A growing library of agent Skills for independent websites.
+</p>
 
-适用于英文／中文独立站文章、B2B 采购指南、产品知识和已有文章优化。支持 WordPress、Shopify 等站点的文章交付，不自动接通或发布网站。
+<p align="center">
+  <a href="#install-in-magpie">Install</a> ·
+  <a href="#workflow-catalog">Browse workflows</a> ·
+  <a href="docs/architecture.md">Architecture</a> ·
+  <a href="docs/roadmap.md">Roadmap</a> ·
+  <a href="CONTRIBUTING.md">Contribute</a> ·
+  <a href="CHANGELOG.md">Changelog</a>
+</p>
 
-## Magpie 安装
+---
 
-1. 进入「技能 → 查找技能」。
-2. 输入本仓库 GitHub 地址。
-3. 只选择 `independent-site-article`。
-4. 保留完整技能文件夹，包括 `references/`、`assets/`、`agents/`。
-5. 选择实际使用的 Agent。
+## One library. Separate workflows.
 
-本仓库只有一个 `SKILL.md`。七个职责写在参考文件中，运行时由主助手委派，不需要再导入七份角色到全局指令。
+Independent Site SOPs turns repeatable website work into scoped, installable Skills. Articles are the first module. Product pages, case studies, and UI/UX will have their own briefs, review criteria, and deliverables.
 
-仓库结构遵循标准技能目录。发布后会检查远程内容和隔离安装；未在你的 Magpie 界面完成实际导入操作。
+Each module lives in its own folder under `skills/`. Install the ones you need in Magpie and choose which Agent can use them.
 
-## 必须准备的语言编辑技能
+**Current release:** `1.1.0` · **Available modules:** `1` · **License:** MIT
 
-- 英文：安装 [blader/humanizer](https://github.com/blader/humanizer)，技能名 `humanizer`。
-- 中文：安装 [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh)，技能名 `humanizer-zh`。
+The repository URL and existing `independent-site-article` Skill name remain unchanged so current installation links continue to work.
 
-本仓库不复制第三方技能正文。只写英文时需要英文技能，只写中文时需要中文技能。缺少对应技能会报告待处理，不能声称已完成指定审核。
+## Workflow catalog
 
-可选：已有 `seo-content`、`seo-geo`、`seo-content-brief`、真实搜索或数据工具时按需调用。未接入付费服务也能基于公开资料工作，但不能编造搜索量和排名。
+| Workflow | Status | Installable Skill | Scope |
+| :--- | :--- | :--- | :--- |
+| **Articles** | **Available** | [`independent-site-article`](skills/independent-site-article/SKILL.md) | Research, drafting, evidence checks, SEO and AI-search review, language editing, final review. |
+| **Product pages** | Planned | Not released | Product specifications, purchase intent, substantiated benefits, comparisons, and conversion review. |
+| **Case studies** | Planned | Not released | Customer permission, project evidence, measured outcomes, narrative, and attribution review. |
+| **UI/UX improvements** | Planned | Not released | Existing-site audit, page structure, design handoff, responsive behavior, and implementation QA. |
 
-## 使用
+Only **Available** modules can be installed. Planned modules are specifications, not placeholder Skills. See the [roadmap](docs/roadmap.md) and machine-readable [catalog](catalog.json).
 
-每篇文章一个主对话，在可以读写项目文件的目录执行：
+## Install in Magpie
+
+1. Open **Library → Skills → Find skills**.
+2. Paste this repository URL:
+
+   ```text
+   https://github.com/METAXGTSEOSEM/independent-site-article-skills
+   ```
+
+3. Select **`independent-site-article`**.
+4. Keep the complete Skill folder, including `references/`, `assets/`, and `agents/`.
+5. Choose the Agent or Agents that should receive it.
+
+New modules will appear separately when released. Installing one module does not install every future workflow or register seven global subagents.
+
+### Language editing dependencies
+
+| Output language | Required Skill | Source |
+| :--- | :--- | :--- |
+| English, the default | `humanizer` | [blader/humanizer](https://github.com/blader/humanizer) |
+| Chinese, only when explicitly requested | `humanizer-zh` | [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) |
+
+All repository documentation, templates, Skill instructions, and interface metadata are in English. An explicit article-language request may override the English output default.
+
+The required editor must actually be available and used. Missing dependencies are reported; ordinary rewriting is never labeled as a completed Humanizer pass. Third-party Skill text is not bundled.
+
+## Start your first article
+
+Use one main conversation per article. The coordinating assistant handles research, writing, reviews, and revisions.
 
 ```text
-使用 independent-site-article，完成本篇文章。
-网站：
-主题或固定标题：
-语言和地区写法：
-目标国家、读者：
-B2B／B2C：
-文章目的：
-已有产品资料或原文：
+Use independent-site-article.
 
-先研究再撰稿，按指定 Humanizer 编辑，并由独立子代理终审。
-保存来源、稿件版本和报告。
-本次只交付文章，不上传或发布。
+Website: [your website]
+Topic or fixed title: [your topic]
+Target market: [country]
+Audience: [reader and knowledge level]
+Business model: [B2B or B2C]
+Goal: [what the reader should understand or do]
+Available evidence: [specifications, original material, sources]
+
+Write in English. Research before drafting.
+Use humanizer for language editing and an independent final reviewer.
+Save sources, draft versions, and review results.
+Deliver the article and publishing fields. Do not upload or publish.
 ```
 
-支持 `$independent-site-article` 的工具可直接点名；其他工具用技能名和自然语言请求即可，实际调用以宿主支持为准。
+Use `$independent-site-article` where the host supports explicit Skill invocation. No specific model, paid research provider, or CMS connection is required. Missing capabilities limit what can be verified.
 
-可委派时，主助手把 `references/roles.md` 中对应职责传给通用子代理。不能委派时交付草稿和自审报告，完整状态为“待独立终审”，不会假装独立审核已完成。
+## How an article moves through review
 
-## 交付与边界
+```mermaid
+flowchart LR
+    A[Brief and research] --> B[Draft]
+    B --> C[Fact check]
+    B --> D[SEO and AI-search review]
+    C --> E[Revision]
+    D --> E
+    E --> F[Humanizer]
+    F --> G[Independent final review]
+    G -->|Rework| E
+    G -->|Pass| H[Delivery]
+    H --> I[Authorized CMS QA]
+```
 
-- 文章正文。
-- H1、SEO title、摘要、slug、图片与内链建议。
-- 事实来源、主张台账和固定版本审核。
-- 网站未实测项与可选后续复盘计划。
+| Role | Responsibility |
+| :--- | :--- |
+| Researcher | Search intent, first-party material, source records, and outline. |
+| Writer | Evidence-based drafting and revisions. |
+| Fact checker | Claims, figures, specifications, scope, and citations. |
+| Search reviewer | Reader intent, SEO, AI-search considerations, and technical unknowns. |
+| Language editor | The specified Humanizer, with meaning and sources preserved. |
+| Final reviewer | Independent assessment of the exact edited version. |
+| Publishing reviewer | CMS and page checks within the authorized scope. |
 
-政策基线核对日为 2026-11-17。每篇须重新核实相关官方资料，不能把基线视为永久最新。
+The coordinator can pass these roles to available general-purpose subagents. A host without delegation can produce a draft and self-review report, but must mark independent review as pending.
 
-不承诺排名、收录、AI 引用、涨粉或 AI 检测通过。安装技能不自动获得网站或账号权限。
+## What you receive
 
-## 文件
+- A publishable-format draft in the requested language.
+- H1, SEO title, meta description, slug, image notes, and relevant internal links.
+- Source and claim records.
+- A version-specific review decision: `PASS`, `REWORK`, or `BLOCKED`.
+- A separate technical status: `TECH_PASS`, `TECH_REWORK`, or `TECH_NOT_CHECKED`.
+
+`PASS` confirms the editorial workflow completed. It does not mean the page has been published, indexed, ranked, or cited by an AI search service.
+
+<details>
+<summary><strong>Quality boundaries</strong></summary>
+
+- Verify current primary sources instead of treating the policy baseline as permanently current.
+- Do not invent specifications, testimonials, experience, certifications, statistics, or search data.
+- Recheck facts and qualifiers after language editing.
+- Do not substitute word-count targets, keyword density, NLP scores, or AI-detector scores for review.
+- Keep search-crawler access distinct from model-training permission.
+- Require separate authorization for CMS writes, publishing, and production changes.
+- Do not promise rankings, indexing, AI citations, or AI-detector results.
+
+</details>
+
+## Built to grow
 
 ```text
-skills/independent-site-article/
-  SKILL.md
-  agents/openai.yaml
-  references/workflow.md
-  references/roles.md
-  references/policy-sources.md
-  assets/brief.md
-  assets/sources.csv
-  assets/claims.csv
-  assets/review-and-delivery.md
+catalog.json                     Available and planned modules
+skills/
+  independent-site-article/      The first installable workflow
+    SKILL.md
+    agents/openai.yaml
+    references/                  Workflow, roles, and policy sources
+    assets/                      Blank production templates
+docs/
+  architecture.md               Packaging and compatibility rules
+  roadmap.md                    Product, case-study, and UI/UX specifications
+scripts/
+  validate.py                   Catalog, packaging, language, and link checks
 ```
 
-本仓库原创工作流采用 MIT 许可；第三方技能与官方资料的许可和权利归各自项目，见 [来源说明](THIRD_PARTY.md)。
+To add a workflow, follow [CONTRIBUTING.md](CONTRIBUTING.md). Each installable module must remain self-contained: Magpie may copy its folder without the rest of this repository.
+
+Run the library checks with Python 3.9 or later:
+
+```bash
+python3 scripts/validate.py
+```
+
+## Updates and attribution
+
+Check [CHANGELOG.md](CHANGELOG.md) before updating installed Skills. Preserve existing Skill identifiers; add new modules rather than expanding the article workflow into unrelated tasks.
+
+The editorial process draws on evidence-based review and revision practices. Search guidance is checked against primary documentation, and language editing uses the specified external projects. See [THIRD_PARTY.md](THIRD_PARTY.md) for sources and [LICENSE](LICENSE) for the license covering this repository.

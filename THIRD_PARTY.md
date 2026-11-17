@@ -1,20 +1,20 @@
-# 来源与外部依赖
+# Sources and external dependencies
 
-本仓库由独立站文章 SOP 改编，借鉴了“任务分工、证据审查、返工和经验复盘”的项目维护方法。没有复制 Magpie 源码或第三方技能全文，也没有官方合作或认证关系。
+This library adapts an editorial SOP built around task ownership, evidence, revision, and independent review. It does not bundle Magpie source code or the complete text of third-party Skills. No endorsement or official partnership is implied.
 
-## 指定语言编辑
+## Required language editors
 
-- https://github.com/blader/humanizer
-- https://github.com/op7418/Humanizer-zh
+- [blader/humanizer](https://github.com/blader/humanizer): English editing.
+- [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh): editing when Chinese output is explicitly requested.
 
-这些项目需按用户所需语言单独安装；授权、版本和维护情况由各自仓库说明。本仓库的 MIT 许可不覆盖链接到的第三方内容。
+Install the editor needed for the requested output language separately. Check the respective repository for its license, version, and dependencies. This repository's MIT license does not relicense external material.
 
-## 方法与规则来源
+## Workflow and policy references
 
-- https://github.com/yetone/magpie
-- https://github.com/AgriciDaniel/claude-seo
-- https://developers.google.com/search/docs/
-- https://developers.openai.com/api/docs/bots
-- https://docs.perplexity.ai/docs/resources/perplexity-crawlers
+- [yetone/magpie](https://github.com/yetone/magpie): project instructions, verification, review, and lessons.
+- [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo): optional SEO research and review Skills.
+- [Google Search Central](https://developers.google.com/search/docs/): content and search documentation.
+- [OpenAI crawler documentation](https://developers.openai.com/api/docs/bots): search and training crawler distinctions.
+- [Perplexity crawler documentation](https://docs.perplexity.ai/docs/resources/perplexity-crawlers): search crawler access.
 
-具体官方页面及核对范围见技能的 `references/policy-sources.md`。该文件是工作基线，运行时仍须重新读取相关原文。
+The article module lists the individual policy pages in `references/policy-sources.md`. Its baseline is dated; each production run must recheck relevant primary sources.
