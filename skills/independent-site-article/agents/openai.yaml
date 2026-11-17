@@ -1,0 +1,4 @@
+interface:
+  display_name: "独立站文章生产与审核"
+  short_description: "分工研究与写作，核查 SEO、AI 搜索和事实，按中英文 Humanizer 编辑后独立终审"
+  default_prompt: "使用 $independent-site-article，按我的主题、市场和语言完成文章研究、写作、指定 Humanizer 编辑及独立终审。"
