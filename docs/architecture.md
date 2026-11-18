@@ -43,6 +43,12 @@ A coordinator may delegate roles using the host's actual capabilities. If indepe
 
 Future modules can reuse this execution pattern while defining different reviewers.
 
+## Repository maintenance
+
+`project-maintenance` is a separate installable workflow. Its templates and run guard stay inside its own folder. The library-specific source configuration and recurring prompt live under `maintenance/`; the reusable Skill can also accept another project's configuration.
+
+The writing module does not call maintenance during article production. An explicitly configured host scheduler runs bounded maintenance passes separately. GitHub's daily validation only checks the repository structure and does not run an autonomous repair model.
+
 ## UI and documentation
 
 The repository interface is the GitHub README: a local SVG cover, navigation, a status catalog, an install path, a workflow diagram, and maintenance links.

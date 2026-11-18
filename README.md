@@ -11,6 +11,7 @@
   <a href="#install-in-magpie">Install</a> ·
   <a href="#workflow-catalog">Browse workflows</a> ·
   <a href="docs/architecture.md">Architecture</a> ·
+  <a href="docs/maintenance.md">Maintenance</a> ·
   <a href="docs/roadmap.md">Roadmap</a> ·
   <a href="CONTRIBUTING.md">Contribute</a> ·
   <a href="CHANGELOG.md">Changelog</a>
@@ -24,7 +25,7 @@ Independent Site SOPs turns repeatable website work into scoped, installable Ski
 
 Each module lives in its own folder under `skills/`. Install the ones you need in Magpie and choose which Agent can use them.
 
-**Current release:** `1.1.0` · **Available modules:** `1` · **License:** MIT
+**Current release:** `1.2.0` · **Available modules:** `2` · **License:** MIT
 
 The repository URL and existing `independent-site-article` Skill name remain unchanged so current installation links continue to work.
 
@@ -33,6 +34,7 @@ The repository URL and existing `independent-site-article` Skill name remain unc
 | Workflow | Status | Installable Skill | Scope |
 | :--- | :--- | :--- | :--- |
 | **Articles** | **Available** | [`independent-site-article`](skills/independent-site-article/SKILL.md) | Research, drafting, evidence checks, SEO and AI-search review, language editing, final review. |
+| **Project maintenance** | **Available** | [`project-maintenance`](skills/project-maintenance/SKILL.md) | Triage feedback, inspect repository health, reproduce defects, prepare tested repairs, and preserve review evidence. |
 | **Product pages** | Planned | Not released | Product specifications, purchase intent, substantiated benefits, comparisons, and conversion review. |
 | **Case studies** | Planned | Not released | Customer permission, project evidence, measured outcomes, narrative, and attribution review. |
 | **UI/UX improvements** | Planned | Not released | Existing-site audit, page structure, design handoff, responsive behavior, and implementation QA. |
@@ -48,11 +50,23 @@ Only **Available** modules can be installed. Planned modules are specifications,
    https://github.com/METAXGTSEOSEM/independent-site-article-skills
    ```
 
-3. Select **`independent-site-article`**.
+3. Select **`independent-site-article`** for articles, **`project-maintenance`** for repository upkeep, or both.
 4. Keep the complete Skill folder, including `references/`, `assets/`, and `agents/`.
 5. Choose the Agent or Agents that should receive it.
 
 New modules will appear separately when released. Installing one module does not install every future workflow or register seven global subagents.
+
+## Maintain this library
+
+The maintenance SOP is now an installable module in this repository. The article Skill still writes articles; the maintenance Skill looks after the library and its future modules.
+
+- [Maintenance guide](docs/maintenance.md): scope, runtime state, scheduling, and limits.
+- [Source configuration](maintenance/sources.json): GitHub Issues, PR feedback, and CI enabled for this repository; other sources disabled until configured.
+- [Recurring-run prompt](maintenance/heartbeat-prompt.md): the bounded task replayed by an authorized scheduler.
+
+Supported optional sources include GitHub Discussions, support email, standalone tickets, Discord, Telegram, Slack, X, Reddit, and application diagnostics. Website forms, embedded support widgets, and website checks are excluded.
+
+Installing a Skill does not start a daemon. Recurring execution requires a host scheduler, working tools, and authorization. The default maintenance scope allows investigation, local fixes, and tests; remote commits, pushes, PR creation, merges, replies, and releases require separate authorization.
 
 ### Language editing dependencies
 
@@ -149,6 +163,10 @@ skills/
     agents/openai.yaml
     references/                  Workflow, roles, and policy sources
     assets/                      Blank production templates
+  project-maintenance/           Feedback intake and verified repair workflow
+maintenance/
+  sources.json                  Repository-specific feedback configuration
+  heartbeat-prompt.md           Bounded recurring-run instructions
 docs/
   architecture.md               Packaging and compatibility rules
   roadmap.md                    Product, case-study, and UI/UX specifications

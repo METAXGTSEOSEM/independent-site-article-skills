@@ -17,6 +17,49 @@ def scalar(text, key):
     return match.group(1) if match else None
 
 
+def validate_maintenance_config(path):
+    errors = []
+    try:
+        config = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as error:
+        return [f"{path.name}: invalid maintenance configuration: {error}"]
+    if config.get("website_sources_enabled") is not False:
+        errors.append(f"{path.name}: website sources must stay excluded.")
+    sources = config.get("sources", [])
+    if not isinstance(sources, list):
+        return errors + [f"{path.name}: sources must be a list."]
+    allowed = {
+        "github_issues", "github_pr_feedback", "github_discussions", "github_actions",
+        "support_email", "support_tickets", "discord", "telegram", "slack", "x",
+        "reddit", "application_diagnostics"
+    }
+    identifiers = set()
+    for source in sources:
+        if not isinstance(source, dict):
+            errors.append(f"{path.name}: sources must contain objects.")
+            continue
+        identifier = source.get("id")
+        if not isinstance(identifier, str) or not identifier or identifier in identifiers:
+            errors.append(f"{path.name}: source IDs must be nonempty and unique.")
+            continue
+        identifiers.add(identifier)
+        if source.get("type") not in allowed:
+            errors.append(f"{path.name}: unsupported source type for {identifier}.")
+        if not isinstance(source.get("enabled"), bool):
+            errors.append(f"{path.name}: enabled must be boolean for {identifier}.")
+        if source.get("enabled") and (not source.get("scope") or not source.get("access_method")):
+            errors.append(f"{path.name}: enabled source {identifier} needs scope and an access method.")
+    limits = config.get("limits", {})
+    for key in ["max_items_per_source", "max_issues_per_run", "max_run_minutes"]:
+        value = limits.get(key)
+        if type(value) is not int or value <= 0:
+            errors.append(f"{path.name}: {key} must be a positive integer.")
+    for key in ["remote_write", "external_reply", "release", "paid_services"]:
+        if config.get("authorization", {}).get(key) is not False:
+            errors.append(f"{path.name}: shipped defaults must not grant {key}.")
+    return errors
+
+
 def validate(root):
     errors = []
     catalog_file = root / "catalog.json"
@@ -85,6 +128,9 @@ def validate(root):
     discovered = {path.resolve() for path in (root / "skills").rglob("SKILL.md")}
     if discovered != available_entries:
         errors.append("Available catalog modules do not match discoverable SKILL.md files.")
+    for config_path in [root / "maintenance/sources.json", root / "skills/project-maintenance/assets/source-config.json"]:
+        if config_path.is_file():
+            errors.extend(validate_maintenance_config(config_path))
     readme = root / "README.md"
     if not readme.is_file():
         errors.append("Missing root README.md.")
@@ -96,7 +142,7 @@ def validate(root):
             errors.append("README available-module count does not match the catalog.")
     for path in root.rglob("*"):
         relative = path.relative_to(root)
-        if any(part in {".git", "__pycache__", "articles", "verification-private"} or part.startswith("._") for part in relative.parts):
+        if any(part in {".git", "__pycache__", "articles", "verification-private", ".maintenance"} or part.startswith("._") for part in relative.parts):
             continue
         if re.search(r"[\u3400-\u9fff]", str(relative)):
             errors.append(f"{relative}: filename must be English.")

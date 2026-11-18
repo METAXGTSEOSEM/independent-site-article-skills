@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.0 - 2026-11-18
+
+- Add the self-contained `project-maintenance` Skill alongside the article module.
+- Integrate multi-channel feedback intake, deduplication, revision-bound review, and repository checks.
+- Configure GitHub Issues, PR feedback, and CI for this library; leave other channels disabled until scoped and authorized.
+- Exclude website feedback and website monitoring because there is no website to maintain.
+- Add a local run guard, state templates, a recurring-run prompt, and maintenance documentation.
+- Keep remote changes and external replies separate from the default local-repair authorization.
+- Add a daily validation schedule in GitHub Actions; this is a structural check, not an autonomous repair agent.
+
 ## 1.1.0 - 2026-11-17
 
 ### Library

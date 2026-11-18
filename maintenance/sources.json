@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "repository": "METAXGTSEOSEM/independent-site-article-skills",
+  "website_sources_enabled": false,
+  "limits": {"max_items_per_source": 30, "max_issues_per_run": 3, "max_run_minutes": 20},
+  "policy_review_interval_days": 7,
+  "authorization": {
+    "scoped_read": true,
+    "local_repair": true,
+    "local_validation": true,
+    "remote_write": false,
+    "external_reply": false,
+    "release": false,
+    "paid_services": false
+  },
+  "sources": [
+    {"id":"github-issues","type":"github_issues","enabled":true,"scope":{"repository":"METAXGTSEOSEM/independent-site-article-skills","updated_items":true},"access_method":"available GitHub connector or authorized browser"},
+    {"id":"github-pr-feedback","type":"github_pr_feedback","enabled":true,"scope":{"repository":"METAXGTSEOSEM/independent-site-article-skills","updated_items":true},"access_method":"available GitHub connector or authorized browser"},
+    {"id":"github-discussions","type":"github_discussions","enabled":false,"scope":{"repository":"METAXGTSEOSEM/independent-site-article-skills"},"access_method":null},
+    {"id":"support-email","type":"support_email","enabled":false,"scope":{},"access_method":null},
+    {"id":"support-tickets","type":"support_tickets","enabled":false,"scope":{},"access_method":null},
+    {"id":"discord","type":"discord","enabled":false,"scope":{},"access_method":null},
+    {"id":"telegram","type":"telegram","enabled":false,"scope":{},"access_method":null},
+    {"id":"slack","type":"slack","enabled":false,"scope":{},"access_method":null},
+    {"id":"x","type":"x","enabled":false,"scope":{},"access_method":null},
+    {"id":"reddit","type":"reddit","enabled":false,"scope":{},"access_method":null},
+    {"id":"application-diagnostics","type":"application_diagnostics","enabled":false,"scope":{},"access_method":null},
+    {"id":"github-actions","type":"github_actions","enabled":true,"scope":{"repository":"METAXGTSEOSEM/independent-site-article-skills","workflow":"validate.yml"},"access_method":"available GitHub connector or authorized browser"}
+  ]
+}

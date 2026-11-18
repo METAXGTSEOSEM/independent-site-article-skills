@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "last_run": null,
+  "remote_head": null,
+  "last_policy_review_at": null,
+  "source_checkpoints": {},
+  "observations": [],
+  "issues": [],
+  "pending_repairs": [],
+  "lessons": []
+}

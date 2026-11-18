@@ -5,6 +5,12 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+  schedule:
+    - cron: "23 16 * * *"
+
+concurrency:
+  group: validate-library-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: read

@@ -8,6 +8,12 @@ This page defines intended modules. It is not a claim that planned Skills are im
 
 Research, draft, fact-check, review for search, edit with the specified Humanizer, and independently review the final version. Optional CMS QA stays separate from writing.
 
+## Available: project maintenance
+
+**ID:** `project-maintenance`
+
+Use configured feedback, repository checks and CI to investigate problems, prepare local fixes and obtain review. Runtime scheduling and source credentials are separate. This module maintains the library; it does not expand the writing workflow or implement roadmap items without a request.
+
 ## Planned: product pages
 
 **Reserved ID:** `independent-site-product-page`
