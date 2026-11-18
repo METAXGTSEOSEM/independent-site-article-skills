@@ -1,0 +1,40 @@
+name: Feedback intake
+
+on:
+  issues:
+    types: [opened, edited, reopened]
+  issue_comment:
+    types: [created, edited]
+  discussion:
+    types: [created, edited]
+  discussion_comment:
+    types: [created, edited]
+  pull_request_target:
+    types: [opened, edited, reopened, ready_for_review]
+  pull_request_review:
+    types: [submitted, edited]
+  pull_request_review_comment:
+    types: [created, edited]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  capture:
+    if: github.event.sender.type != 'Bot'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+      - name: Normalize feedback without secrets or execution
+        run: python3 .github/scripts/feedback.py capture --record feedback.json
+      - uses: actions/upload-artifact@v7
+        with:
+          name: feedback-event
+          path: feedback.json
+          if-no-files-found: error
+          retention-days: 1

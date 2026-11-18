@@ -1,4 +1,6 @@
-# Maintaining and extending the library
+# Contributing to WordPress Content Skills
+
+Product development covers the available article Skill and the separately planned product-page, case-study, and UI/UX modules. Repository operations are documented in [the internal maintenance guide](.github/MAINTENANCE.md).
 
 ## Update an existing Skill
 
@@ -47,9 +49,11 @@ Then mark the catalog entry `available`, set its path and version, and update th
 
 ## Documentation UI
 
-Keep the README focused on discovery, installation, use, status, and maintenance. Use local SVG assets with a viewBox, accessible text, and no embedded scripts or remote resources.
+Keep the product README focused on WordPress content, discovery, installation, use, and release status. Keep repository operations in contributor documentation. Use local SVG assets with a viewBox, accessible text, and no embedded scripts or remote resources.
 
 Use text labels for status. Keep planned and available modules visibly distinct. Update catalog counts, headings, and links together.
+
+Use WordPress Content Skills as the display name and `https://github.com/METAXGTSEOSEM/wordpress-content-skills` as the repository URL. Installation instructions must be host-independent and preserve each complete Skill folder and required language-editor routing.
 
 ## Release notes
 

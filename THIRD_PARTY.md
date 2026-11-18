@@ -1,6 +1,6 @@
 # Sources and external dependencies
 
-This library adapts an editorial SOP built around task ownership, evidence, revision, and independent review. It does not bundle Magpie source code or the complete text of third-party Skills. No endorsement or official partnership is implied.
+WordPress Content Skills organizes article production around task ownership, evidence, revision, and independent review. It does not bundle third-party Skill text or source code. Links below identify external dependencies and reference material; they do not imply endorsement or an official partnership.
 
 ## Required language editors
 
@@ -11,10 +11,9 @@ Install the editor needed for the requested output language separately. Check th
 
 ## Workflow and policy references
 
-- [yetone/magpie](https://github.com/yetone/magpie): project instructions, verification, review, and lessons.
 - [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo): optional SEO research and review Skills.
 - [Google Search Central](https://developers.google.com/search/docs/): content and search documentation.
 - [OpenAI crawler documentation](https://developers.openai.com/api/docs/bots): search and training crawler distinctions.
 - [Perplexity crawler documentation](https://docs.perplexity.ai/docs/resources/perplexity-crawlers): search crawler access.
 
-The article module lists the individual policy pages in `references/policy-sources.md`. Its baseline is dated; each production run must recheck relevant primary sources.
+The article module lists the individual policy pages in [its policy source register](skills/independent-site-article/references/policy-sources.md). Its baseline is dated; each production run must recheck relevant primary sources.

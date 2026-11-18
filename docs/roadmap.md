@@ -1,18 +1,16 @@
-# Workflow roadmap
+# WordPress Content Skills roadmap
 
-This page defines intended modules. It is not a claim that planned Skills are implemented, installable, or tested.
+Release `1.3.0` provides one available article module. Product pages, case studies, and UI/UX remain planned; their descriptions below do not claim implementation, installation support, or completed testing.
 
 ## Available: articles
 
 **ID:** `independent-site-article`
 
+**Module version:** `1.1.0`
+
 Research, draft, fact-check, review for search, edit with the specified Humanizer, and independently review the final version. Optional CMS QA stays separate from writing.
 
-## Available: project maintenance
-
-**ID:** `project-maintenance`
-
-Use configured feedback, repository checks and CI to investigate problems, prepare local fixes and obtain review. Runtime scheduling and source credentials are separate. This module maintains the library; it does not expand the writing workflow or implement roadmap items without a request.
+The released workflow supports WordPress article writing, SEO content review, and GEO / AI search considerations. It does not guarantee indexing, rankings, traffic, or AI citations.
 
 ## Planned: product pages
 

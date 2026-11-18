@@ -1,17 +1,16 @@
 <p align="center">
-  <img src="docs/assets/cover.svg" alt="Independent Site SOPs: a modular library for content, commerce, and website experience workflows." width="1200">
+  <img src="docs/assets/cover.svg" alt="WordPress Content Skills. Articles available; product pages, case studies, and UI/UX planned." width="1200">
 </p>
 
 <p align="center">
-  <strong>Research. Create. Verify. Improve.</strong><br>
-  A growing library of agent Skills for independent websites.
+  <strong>Research. Write. Verify.</strong><br>
+  Agent Skills for WordPress articles, SEO content, and GEO / AI search review.
 </p>
 
 <p align="center">
-  <a href="#install-in-magpie">Install</a> ·
+  <a href="#installation">Install</a> ·
   <a href="#workflow-catalog">Browse workflows</a> ·
   <a href="docs/architecture.md">Architecture</a> ·
-  <a href="docs/maintenance.md">Maintenance</a> ·
   <a href="docs/roadmap.md">Roadmap</a> ·
   <a href="CONTRIBUTING.md">Contribute</a> ·
   <a href="CHANGELOG.md">Changelog</a>
@@ -19,54 +18,44 @@
 
 ---
 
-## One library. Separate workflows.
+# WordPress Content Skills
 
-Independent Site SOPs turns repeatable website work into scoped, installable Skills. Articles are the first module. Product pages, case studies, and UI/UX will have their own briefs, review criteria, and deliverables.
+WordPress Content Skills provides evidence-based article writing and review for WordPress websites. The released article workflow covers research, drafting, fact-checking, SEO content review, and generative engine optimization (GEO) / AI search considerations.
 
-Each module lives in its own folder under `skills/`. Install the ones you need in Magpie and choose which Agent can use them.
+Product pages, case studies, and UI/UX improvements are planned as separate modules with their own briefs, review criteria, and deliverables. They are not included in the current release.
 
-**Current release:** `1.2.0` · **Available modules:** `2` · **License:** MIT
+**Current release:** `1.3.0` · **Available modules:** `1` · **License:** MIT
 
-The repository URL and existing `independent-site-article` Skill name remain unchanged so current installation links continue to work.
+**Repository:** [METAXGTSEOSEM/wordpress-content-skills](https://github.com/METAXGTSEOSEM/wordpress-content-skills). The article Skill keeps its existing ID, `independent-site-article`, and version, `1.1.0`.
+
+The workflow produces a manuscript and WordPress publishing fields. It runs in a compatible agent host; it is not a WordPress plugin. CMS access and publishing authorization are separate.
 
 ## Workflow catalog
 
 | Workflow | Status | Installable Skill | Scope |
 | :--- | :--- | :--- | :--- |
-| **Articles** | **Available** | [`independent-site-article`](skills/independent-site-article/SKILL.md) | Research, drafting, evidence checks, SEO and AI-search review, language editing, final review. |
-| **Project maintenance** | **Available** | [`project-maintenance`](skills/project-maintenance/SKILL.md) | Triage feedback, inspect repository health, reproduce defects, prepare tested repairs, and preserve review evidence. |
+| **Articles** | **Available · v1.1.0** | [`independent-site-article`](skills/independent-site-article/SKILL.md) | Blog articles, buying guides, educational content, and existing-article review with research, evidence checks, SEO / GEO review, language editing, and final review. |
 | **Product pages** | Planned | Not released | Product specifications, purchase intent, substantiated benefits, comparisons, and conversion review. |
 | **Case studies** | Planned | Not released | Customer permission, project evidence, measured outcomes, narrative, and attribution review. |
 | **UI/UX improvements** | Planned | Not released | Existing-site audit, page structure, design handoff, responsive behavior, and implementation QA. |
 
 Only **Available** modules can be installed. Planned modules are specifications, not placeholder Skills. See the [roadmap](docs/roadmap.md) and machine-readable [catalog](catalog.json).
 
-## Install in Magpie
+## Installation
 
-1. Open **Library → Skills → Find skills**.
-2. Paste this repository URL:
+Use your agent host's documented Skill installation method. The source repository is:
 
-   ```text
-   https://github.com/METAXGTSEOSEM/independent-site-article-skills
-   ```
+```text
+https://github.com/METAXGTSEOSEM/wordpress-content-skills
+```
 
-3. Select **`independent-site-article`** for articles, **`project-maintenance`** for repository upkeep, or both.
-4. Keep the complete Skill folder, including `references/`, `assets/`, and `agents/`.
-5. Choose the Agent or Agents that should receive it.
+1. Download the repository or use a host-supported repository installer.
+2. Select only the available article module at `skills/independent-site-article/`.
+3. Keep the complete folder, including `SKILL.md`, `references/`, `assets/`, and `agents/`. Copying only `SKILL.md` leaves required instructions and templates behind.
+4. Install the required language editor listed below and make both Skills available to the coordinating assistant.
+5. Confirm the host can load the Skill and its supporting files before starting an article.
 
-New modules will appear separately when released. Installing one module does not install every future workflow or register seven global subagents.
-
-## Maintain this library
-
-The maintenance SOP is now an installable module in this repository. The article Skill still writes articles; the maintenance Skill looks after the library and its future modules.
-
-- [Maintenance guide](docs/maintenance.md): scope, runtime state, scheduling, and limits.
-- [Source configuration](maintenance/sources.json): GitHub Issues, PR feedback, and CI enabled for this repository; other sources disabled until configured.
-- [Recurring-run prompt](maintenance/heartbeat-prompt.md): the bounded task replayed by an authorized scheduler.
-
-Supported optional sources include GitHub Discussions, support email, standalone tickets, Discord, Telegram, Slack, X, Reddit, and application diagnostics. Website forms, embedded support widgets, and website checks are excluded.
-
-Installing a Skill does not start a daemon. Recurring execution requires a host scheduler, working tools, and authorization. The default maintenance scope allows investigation, local fixes, and tests; remote commits, pushes, PR creation, merges, replies, and releases require separate authorization.
+For discovery and installation, use only entries marked `available` in [catalog.json](catalog.json). Planned modules have no installation path. Installing the article module does not register seven global subagents.
 
 ### Language editing dependencies
 
@@ -86,7 +75,7 @@ Use one main conversation per article. The coordinating assistant handles resear
 ```text
 Use independent-site-article.
 
-Website: [your website]
+Website: [your WordPress website]
 Topic or fixed title: [your topic]
 Target market: [country]
 Audience: [reader and knowledge level]
@@ -95,7 +84,7 @@ Goal: [what the reader should understand or do]
 Available evidence: [specifications, original material, sources]
 
 Write in English. Research before drafting.
-Use humanizer for language editing and an independent final reviewer.
+Use humanizer for language editing, then an independent final reviewer.
 Save sources, draft versions, and review results.
 Deliver the article and publishing fields. Do not upload or publish.
 ```
@@ -163,10 +152,6 @@ skills/
     agents/openai.yaml
     references/                  Workflow, roles, and policy sources
     assets/                      Blank production templates
-  project-maintenance/           Feedback intake and verified repair workflow
-maintenance/
-  sources.json                  Repository-specific feedback configuration
-  heartbeat-prompt.md           Bounded recurring-run instructions
 docs/
   architecture.md               Packaging and compatibility rules
   roadmap.md                    Product, case-study, and UI/UX specifications
@@ -174,7 +159,7 @@ scripts/
   validate.py                   Catalog, packaging, language, and link checks
 ```
 
-To add a workflow, follow [CONTRIBUTING.md](CONTRIBUTING.md). Each installable module must remain self-contained: Magpie may copy its folder without the rest of this repository.
+To add a workflow, follow [CONTRIBUTING.md](CONTRIBUTING.md). Each installable module must remain self-contained because a host may copy its folder without the rest of this repository.
 
 Run the library checks with Python 3.9 or later:
 

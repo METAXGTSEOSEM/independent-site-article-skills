@@ -1,10 +1,10 @@
-# Library architecture
+# WordPress Content Skills architecture
 
 ## A module is the installation boundary
 
 Every released workflow lives under `skills/<skill-id>/` and has one `SKILL.md` entry. The folder includes all references, templates, and host metadata needed for that module.
 
-Magpie or another installer may copy only that folder. A Skill must not depend on `../../docs`, another module's private files, or the maintainer's local paths.
+A host or installer may copy only that folder. A Skill must not depend on `../../docs`, another module's private files, or the maintainer's local paths.
 
 Repository documentation can link to multiple modules. Runtime instructions must remain installable on their own.
 
@@ -15,13 +15,15 @@ Repository documentation can link to multiple modules. Runtime instructions must
 - `available`: a real Skill exists at `path`, with matching name and version.
 - `planned`: a reserved idea or specification, with `path` and `version` set to `null`.
 
-Do not create empty Skill entries for planned work. A search in Magpie should show only usable workflows.
+Do not create empty Skill entries for planned work. Product discovery and installation must expose only available catalog entries.
 
 The README catalog mirrors these states. Update it when a module changes status.
 
 ## Names and versions
 
 Keep `independent-site-article` stable. It is the article module's installation identity, not the name of the whole library.
+
+The product name is WordPress Content Skills and its repository is `https://github.com/METAXGTSEOSEM/wordpress-content-skills`. Library release `1.3.0` keeps the article module at `1.1.0`.
 
 The library version describes repository changes. Each available module also has its own version in the catalog and Skill metadata.
 
@@ -45,13 +47,11 @@ Future modules can reuse this execution pattern while defining different reviewe
 
 ## Repository maintenance
 
-`project-maintenance` is a separate installable workflow. Its templates and run guard stay inside its own folder. The library-specific source configuration and recurring prompt live under `maintenance/`; the reusable Skill can also accept another project's configuration.
-
-The writing module does not call maintenance during article production. An explicitly configured host scheduler runs bounded maintenance passes separately. GitHub's daily validation only checks the repository structure and does not run an autonomous repair model.
+Repository maintenance belongs under `.github/` as an internal contributor workflow, outside the product catalog, Skill discovery, and installation.
 
 ## UI and documentation
 
-The repository interface is the GitHub README: a local SVG cover, navigation, a status catalog, an install path, a workflow diagram, and maintenance links.
+The repository interface is the GitHub README: a local SVG cover, navigation, a status catalog, host-independent installation instructions, and a workflow diagram.
 
 The UI/UX module is separate planned work. A redesigned README is not an implementation of that module.
 

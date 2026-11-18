@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.3.0 - 2026-11-18
+
+- Rebrand the product as WordPress Content Skills at `https://github.com/METAXGTSEOSEM/wordpress-content-skills`.
+- Focus discovery on WordPress article writing, SEO content, and GEO / AI search review.
+- Keep the article Skill ID `independent-site-article` and module version `1.1.0` unchanged.
+- Keep product pages, case studies, and UI/UX improvements explicitly planned.
+- Remove repository maintenance from the product catalog and installation guidance; direct contributors to internal `.github/` documentation.
+- Replace host-specific installation steps with complete-folder installation and required `humanizer` / `humanizer-zh` routing.
+- Refresh the local SVG cover and remove an attribution for code that was not copied.
+- Preserve evidence requirements, independent review, publishing authorization, and the limits on ranking and AI-citation claims.
+
 ## 1.2.0 - 2026-11-18
 
 - Add the self-contained `project-maintenance` Skill alongside the article module.
@@ -14,7 +25,7 @@
 
 ### Library
 
-- Present the repository as Independent Site SOPs, a modular workflow library.
+- Present the repository as a modular workflow library under its previous name.
 - Add a machine-readable catalog and extension architecture.
 - Reserve product-page, case-study, and UI/UX modules as planned work.
 - Add contribution instructions and repository validation.
@@ -24,7 +35,7 @@
 
 - Translate all instructions, templates, references, and interface metadata into English.
 - Default output to English while retaining explicitly requested Chinese editing through `humanizer-zh`.
-- Preserve the Skill identifier and repository URL for existing installations.
+- Preserve the Skill identifier and the then-current repository URL for existing installations.
 - Retain factual verification, specified Humanizer routing, version-bound independent review, and separate publishing authorization.
 
 ## 1.0.0 - 2026-11-17
