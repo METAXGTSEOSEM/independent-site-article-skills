@@ -1,4 +1,0 @@
-interface:
-  display_name: "Project maintenance"
-  short_description: "Triage feedback, verify repairs, and review repository health."
-  default_prompt: "Use $project-maintenance to check this repository's configured feedback and CI, prepare verified local fixes, and report items awaiting review."
