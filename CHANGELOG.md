@@ -7,6 +7,9 @@
 - Keep the article Skill ID `independent-site-article` and module version `1.1.0` unchanged.
 - Keep product pages, case studies, and UI/UX improvements explicitly planned.
 - Remove repository maintenance from the product catalog and installation guidance; direct contributors to internal `.github/` documentation.
+- Replace periodic maintenance with GitHub feedback events, secret-backed Telegram delivery, and an automated receipt for new Issues.
+- Remove daily validation scheduling and the local four-hour heartbeat; validation runs on changes or an explicit manual dispatch.
+- Keep feedback routing distinct from diagnosis and repair; no autonomous model backend, merge, or release is enabled.
 - Replace host-specific installation steps with complete-folder installation and required `humanizer` / `humanizer-zh` routing.
 - Refresh the local SVG cover and remove an attribution for code that was not copied.
 - Preserve evidence requirements, independent review, publishing authorization, and the limits on ranking and AI-citation claims.
