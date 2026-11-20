@@ -1,14 +1,16 @@
 # WordPress Content Skills roadmap
 
-Release `1.3.0` provides one available article module. Product pages, case studies, and UI/UX remain planned; their descriptions below do not claim implementation, installation support, or completed testing.
+Release `1.4.0` provides one available article module. Product pages, case studies, and UI/UX remain planned; their descriptions below do not claim implementation, installation support, or completed testing.
 
 ## Available: articles
 
 **ID:** `independent-site-article`
 
-**Module version:** `1.1.0`
+**Module version:** `1.2.0`
 
-Research, draft, fact-check, review for search, edit with the specified Humanizer, and independently review the final version. Optional CMS QA stays separate from writing.
+Select a primary content type, research, draft, fact-check, review for search, edit with the specified Humanizer, and independently review the final version. Optional CMS QA stays separate from writing.
+
+The released type set covers awareness, selection, comparison, specification, application, troubleshooting, certification and procurement. The type controls required sections, evidence, CTA and the review gate; it does not impose a fixed word count.
 
 The released workflow supports WordPress article writing, SEO content review, and GEO / AI search considerations. It does not guarantee indexing, rankings, traffic, or AI citations.
 

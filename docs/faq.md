@@ -5,6 +5,13 @@
 No. It is a set of agent instructions and templates. It produces a manuscript
 and publishing fields; it does not install into WordPress.
 
+## What if I do not know which content type to use?
+
+Describe what the reader must decide or do. The Skill selects one of eight
+primary types, records the assumption and uses the matching outline, evidence
+and CTA. If two types compete, it chooses the first decision and treats the
+other as a follow-up rather than blending everything into one page.
+
 ## Does it publish automatically?
 
 No. Publishing, scheduling, CMS writes and live-site changes require separate

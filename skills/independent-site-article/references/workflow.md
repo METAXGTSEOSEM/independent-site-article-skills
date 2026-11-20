@@ -13,6 +13,8 @@ Choose the requested mode:
 - Review only: report findings without rewriting unless requested.
 - Outline only: deliver an outline and evidence, not a full manuscript.
 
+Select one primary content type from `content-types.md` and record it in the brief. The type determines the reader's job, required sections, evidence and CTA. Do not use a fixed word count as the framework.
+
 English is the default for content and working documents. An explicit language request overrides it. Ask about missing context when it would change the work; do not require every optional brief field.
 
 ## Research and outline
@@ -26,11 +28,11 @@ English is the default for content and working documents. An explicit language r
 
 Record what each source supports, when it was read, and its scope. Internal material needs a provider, version, and permission to disclose.
 
-The outline connects each section to a reader question, evidence, and a useful conclusion. Verify internal-link targets. Do not prescribe fixed word counts, keyword density, paragraph length, or FAQ counts.
+The outline connects each section to a reader question, evidence, and a useful conclusion. Apply the selected type's required sections and evidence priorities. Verify internal-link targets. Do not prescribe fixed word counts, keyword density, paragraph length, or FAQ counts.
 
 ## Draft v1
 
-The writer uses the brief, outline, and evidence. Put important figures, specifications, standards, comparisons, cases, captions, and commercial claims in the claim record.
+The writer uses the brief, content type, outline, and evidence. Put important figures, specifications, standards, comparisons, cases, captions, and commercial claims in the claim record. Match the CTA to the type and business model.
 
 Answer the main question before adding conditions, reasoning, and next steps. Preserve technical terms that matter to the reader.
 
@@ -46,7 +48,7 @@ Fact review checks whether the source supports the actual wording, including uni
 
 High-risk technical or safety claims need suitable evidence or expert review. A manufacturer's statement is not an independent test.
 
-Search review checks intent, business relevance, original help, structure, entity meaning, titles, summaries, links, and technical evidence. Scores and formulas cannot offset factual problems.
+Search review checks intent, business relevance, original help, type fit, structure, entity meaning, titles, summaries, links, and technical evidence. Scores and formulas cannot offset factual problems.
 
 Record changes by issue ID: fixed, not adopted with evidence, or awaiting information. Recheck new factual claims and substantial structural changes. Close blocking issues before language editing.
 
@@ -67,6 +69,7 @@ Inputs: v3, v2, the brief, evidence, claim records, and prior findings. Recheck 
 Verify:
 
 - The reader's task is answered and the promised value is present.
+- The selected content type's gate is met; a generic article is not substituted for the chosen type.
 - Editing did not change figures, conditions, certainty, negation, or attribution.
 - Titles, metadata, captions, tables, and CTA match the manuscript.
 - The specified editor was actually used and coverage limits are disclosed.

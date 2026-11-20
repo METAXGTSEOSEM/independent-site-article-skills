@@ -41,11 +41,11 @@ Product pages, case studies, and UI/UX improvements are planned as separate
 modules with their own briefs, review criteria, and deliverables. They are not
 included in the current release.
 
-**Current release:** `1.3.0` · **Available modules:** `1` · **License:** MIT
+**Current release:** `1.4.0` · **Available modules:** `1` · **License:** MIT
 
 **Repository:** [METAXGTSEOSEM/wordpress-content-skills](https://github.com/METAXGTSEOSEM/wordpress-content-skills).
-The article Skill keeps its existing ID, `independent-site-article`, and version,
-`1.1.0`.
+The article Skill keeps its existing ID, `independent-site-article`, and is now
+version `1.2.0`.
 
 The workflow produces a manuscript and WordPress publishing fields. It runs in
 a compatible agent host; it is not a WordPress plugin. CMS access and publishing
@@ -63,6 +63,28 @@ authorization are separate.
 
 `PASS` confirms the editorial workflow completed. It does not mean the page has
 been published, indexed, ranked or cited by an AI search service.
+
+## Choose the article type
+
+The Skill selects one primary content type before outlining. The type sets the
+reader's job, required sections, evidence priorities, CTA and review gate. It
+does not set a fixed word count or keyword density.
+
+| Type | Reader question | What the article must do |
+| --- | --- | --- |
+| Awareness / education | What is it? | Define the topic, categories and fit before selling. |
+| Selection / buying guide | How do I choose? | Turn the decision into criteria, trade-offs and a usable shortlist. |
+| Comparison / alternative | X or Y? | Compare like-for-like and state which scenario fits which option. |
+| Specification / standard | What must it meet? | State units, versions, test methods and unresolved values. |
+| Application / scenario | Is it right for my situation? | Test the option against real constraints and permitted evidence. |
+| Troubleshooting / process | How do I diagnose or solve it? | Separate symptoms, causes, checks and safety escalation. |
+| Certification / compliance | What does compliance require? | Explain scope, jurisdiction, documents and limits. |
+| Procurement / cooperation | How do I buy or qualify a supplier? | Clarify the model, information request and approved commercial terms. |
+
+See [content types and article frameworks](skills/independent-site-article/references/content-types.md)
+for required sections, type-specific review gates and guardrails. If the brief
+does not name a type, the Skill infers one from the reader's decision stage and
+records the assumption.
 
 ## Who it is for
 
@@ -98,6 +120,7 @@ Brief: [paste or link your brief]
 Market: [country]
 Audience: [reader and knowledge level]
 Business model: [B2B or B2C]
+Content type: [if known, or ask the Skill to infer one]
 Goal: [what the reader should understand or do]
 Evidence: [datasheets, first-party material, sources]
 
@@ -133,7 +156,7 @@ placeholders or product details as real claims.
 
 | Workflow | Status | Installable Skill | Scope |
 | :--- | :--- | :--- | :--- |
-| **Articles** | **Available · v1.1.0** | [`independent-site-article`](skills/independent-site-article/SKILL.md) | Blog articles, buying guides, educational content, and existing-article review with research, evidence checks, SEO / GEO review, language editing, and final review. |
+| **Articles** | **Available · v1.2.0** | [`independent-site-article`](skills/independent-site-article/SKILL.md) | Type-aware articles: awareness, selection, comparison, specification, application, troubleshooting, certification and procurement. Research, evidence checks, SEO / GEO review, language editing, and final review. |
 | **Product pages** | Planned | Not released | Product specifications, purchase intent, substantiated benefits, comparisons, and conversion review. |
 | **Case studies** | Planned | Not released | Customer permission, project evidence, measured outcomes, narrative, and attribution review. |
 | **UI/UX improvements** | Planned | Not released | Existing-site audit, page structure, design handoff, responsive behavior, and implementation QA. |
@@ -252,7 +275,7 @@ skills/
   independent-site-article/      The installable article workflow
     SKILL.md
     agents/openai.yaml
-    references/                  Workflow, roles, and policy sources
+    references/                  Workflow, content types, roles, and policy sources
     assets/                      Blank production templates
 examples/
   project-management-tool-article/  Complete synthetic article package

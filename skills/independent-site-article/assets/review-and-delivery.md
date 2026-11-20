@@ -3,6 +3,7 @@
 ## Version
 
 - Article ID and mode:
+- Content type and selection rationale:
 - Draft path, version, and available hash:
 - Review stage, actual reviewer, and time:
 - Execution: independent subagent / another reviewer / same-assistant self-review
@@ -29,6 +30,7 @@ Unsupported central claims, serious misinformation, missing essential evidence, 
 
 - Editorial status: PASS / REWORK / BLOCKED
 - Technical status: TECH_PASS / TECH_REWORK / TECH_NOT_CHECKED
+- Type-specific gate and evidence:
 - Independent review completed:
 - Frozen manuscript:
 - H1, SEO title, meta description, and slug:

@@ -8,7 +8,7 @@ description: >
   production, and UI/UX implementation belong to separate workflows.
 license: MIT
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
   policy_baseline_checked_on: "2026-11-17"
 ---
 
@@ -24,7 +24,9 @@ Read existing project material before asking questions. Confirm the website or b
 
 Write in English by default, including briefs, reports, and CMS fields. An explicit output-language request overrides this default. Preserve a fixed title unless the user agrees to change it. When asked to suggest topics, research before proposing a shortlist.
 
-Read the [workflow](references/workflow.md) and [policy sources](references/policy-sources.md). Use the [brief template](assets/brief.md) where useful; unknown fields stay unknown.
+Read the [workflow](references/workflow.md), [content types](references/content-types.md), and [policy sources](references/policy-sources.md). Use the [brief template](assets/brief.md) where useful; unknown fields stay unknown.
+
+Select one primary content type before research or outlining. If the brief does not name one, infer it from the reader's decision stage and record the assumption. Ask only when the choice would materially change the article.
 
 Check available Skills, delegation, search, and MCP connections. Load relevant instructions, not every installed capability. Report missing data; never invent search volume, rankings, or account results.
 
@@ -35,7 +37,7 @@ Honor the requested mode: outline, full production, targeted revision, review on
 Read the relevant section of [roles](references/roles.md) and give each delegate the role, fixed draft version, and supporting evidence.
 
 ```text
-Research and sources -> Outline -> Draft v1
+Content type + brief -> Research and sources -> Outline -> Draft v1
 -> Fact check + SEO/AI-search review
 -> Author revision v2 -> Specified language editor v3
 -> Independent final review -> Frozen manuscript and report
@@ -60,6 +62,8 @@ Recheck relevant official guidance for each production run. The baseline date is
 
 Use available `seo-content-brief`, `seo-content`, and `seo-geo` Skills as aids. They are optional; their scores, fixed lengths, and formulas do not override verified official guidance or the evidence.
 
+Use the selected content type's required sections, evidence priorities, CTA and review gate. A type is not a word-count or keyword-density template.
+
 Record editorial quality, technical accessibility, indexing, and observed performance separately. Without page or account evidence, do not pass robots, canonical, WAF, AI-appearance controls, or structured-data checks.
 
 ## 4. Apply the specified language editor
@@ -78,6 +82,8 @@ For bilingual output, edit and review each language separately. Preserve facts, 
 ## 5. Review the final version
 
 The final reviewer reads both versions around language editing and the evidence. Check meaning changes, important claims, titles, tables, captions, CTA, and issue closure. Use the [review and delivery record](assets/review-and-delivery.md).
+
+Check the selected type's failure mode and gate in [content types](references/content-types.md). A generic article that ignores its type is not a pass.
 
 - `PASS`: independent final review completed; freeze that version.
 - `REWORK`: return specific findings to the responsible role.

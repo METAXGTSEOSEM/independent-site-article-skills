@@ -14,6 +14,7 @@ change a live site.
 ## Before publishing
 
 - Read the final article end to end after language editing.
+- Confirm the article matches its selected content type and CTA.
 - Recheck every number, unit, specification, certification and quotation.
 - Confirm the title, meta description, slug and excerpt match the final copy.
 - Confirm categories and tags use the site's existing taxonomy.

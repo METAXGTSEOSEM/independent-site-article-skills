@@ -11,6 +11,7 @@ Install the editor needed for the requested output language separately. Check th
 
 ## Workflow and policy references
 
+- [METAXGTSEOSEM/Content-Cluster-SOP](https://github.com/METAXGTSEOSEM/Content-Cluster-SOP): content-type taxonomy inspiration. This repository adapts the type selection into evidence and review gates; it does not adopt fixed word counts, keyword-density rules or generated-experience prompts.
 - [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo): optional SEO research and review Skills.
 - [Google Search Central](https://developers.google.com/search/docs/): content and search documentation.
 - [OpenAI crawler documentation](https://developers.openai.com/api/docs/bots): search and training crawler distinctions.

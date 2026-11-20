@@ -23,7 +23,7 @@ The README catalog mirrors these states. Update it when a module changes status.
 
 Keep `independent-site-article` stable. It is the article module's installation identity, not the name of the whole library.
 
-The product name is WordPress Content Skills and its repository is `https://github.com/METAXGTSEOSEM/wordpress-content-skills`. Library release `1.3.0` keeps the article module at `1.1.0`.
+The product name is WordPress Content Skills and its repository is `https://github.com/METAXGTSEOSEM/wordpress-content-skills`. Library release `1.4.0` keeps the article module at `1.2.0`.
 
 The library version describes repository changes. Each available module also has its own version in the catalog and Skill metadata.
 

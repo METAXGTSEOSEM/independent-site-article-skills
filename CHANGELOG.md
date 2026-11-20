@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.4.0 - 2026-11-20
+
+- Add a primary content-type framework to the article Skill: awareness, selection, comparison, specification, application, troubleshooting, certification and procurement.
+- Define type-specific required sections, evidence priorities, CTAs, failure modes and review gates.
+- Record the selected type and rationale in the brief and review/delivery record.
+- Update the worked example to declare a selection-guide type.
+- Add guardrails against fixed word counts, keyword density, copied competitor outlines and invented EEAT experience.
+- Bump the article module to `1.2.0`; keep the existing Skill ID.
+
 ## 1.3.0 - 2026-11-18
 
 - Rebrand the product as WordPress Content Skills at `https://github.com/METAXGTSEOSEM/wordpress-content-skills`.

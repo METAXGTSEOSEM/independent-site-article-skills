@@ -26,6 +26,8 @@ Help the reader build a shortlist and a repeatable evaluation process.
 
 ## Proposed article
 
+- Content type: selection / buying guide
+- Primary reader question: How should a small agency compare project management tools?
 - Working title: How to Choose a Project Management Tool for a Small Agency
 - Primary search intent: commercial investigation
 - Primary keyword: project management tool for small agency

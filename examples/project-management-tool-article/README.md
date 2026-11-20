@@ -19,6 +19,7 @@ It shows the handoff from a short brief to a reviewed, publish-ready package:
 ## What the example demonstrates
 
 - The draft is not accepted just because it reads well.
+- The brief selects a selection guide, so the outline is organized around buyer criteria rather than a generic definition.
 - Unsupported popularity, pricing and comparison claims are removed.
 - Missing trial evidence stays visibly missing instead of being invented.
 - SEO and AI-search guidance does not override factual accuracy.

@@ -3,6 +3,8 @@
 - Article ID:
 - Website and business:
 - Mode: new article / revision / review only / outline only
+- Content type: awareness / selection / comparison / specification / application / troubleshooting / certification / procurement
+- Primary reader question:
 - Original text or URL:
 - Topic or query:
 - Fixed title or permission to propose titles:
