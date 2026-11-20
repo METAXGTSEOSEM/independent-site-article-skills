@@ -6,7 +6,10 @@ change a live site.
 ## Before drafting
 
 - Confirm the target market, language, audience and business model.
+- Confirm the primary reader role and decision authority, not only a demographic label.
 - Confirm whether the page is B2B inquiry or B2C conversion focused.
+- Confirm the cluster role, parent pillar, siblings and cannibalization decision.
+- Confirm the keyword source, intent and checked date; missing data stays missing.
 - Collect the product datasheet, first-party evidence and approved claims.
 - List what is missing instead of filling gaps with assumptions.
 - Agree the primary action and the page's success signal.
@@ -15,11 +18,14 @@ change a live site.
 
 - Read the final article end to end after language editing.
 - Confirm the article matches its selected content type and CTA.
+- Confirm the opening addresses the reader's decision rather than a training syllabus.
+- Confirm the article is not a near-duplicate of a sibling page.
 - Recheck every number, unit, specification, certification and quotation.
 - Confirm the title, meta description, slug and excerpt match the final copy.
 - Confirm categories and tags use the site's existing taxonomy.
 - Check internal links and remove links to drafts or deprecated pages.
 - Check image rights, alt text, file size and responsive cropping.
+- Confirm the image plan's purpose, placement, caption and rights status.
 - Check canonical, indexability and multilingual settings.
 - Check schema against the visible page and the SEO plugin output.
 - Confirm the CTA matches the business model.

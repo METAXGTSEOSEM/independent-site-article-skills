@@ -52,10 +52,10 @@ plausible-sounding specifications.
 
 ## Can it help with topic clusters?
 
-The current workflow can define one article's role, propose internal-link
-targets and verify that those targets exist. A site-wide pillar-and-cluster
-planning module is not released yet; do not describe a single article as a
-complete cluster strategy.
+It builds a cluster map for the assigned topic: page role, parent pillar,
+sibling pages, one intent and focus keyword per URL, a cannibalization decision
+and internal links in both directions. A full site-wide architecture audit is a
+separate scope; do not describe one article as a complete site strategy.
 
 ## Will it remove the AI feel from a draft?
 
@@ -63,6 +63,44 @@ The workflow routes the manuscript through the specified Humanizer and then an
 independent review. That can remove generic phrasing and repetition, but it does
 not guarantee a particular AI-detector score, authorship result or editorial
 quality without human review.
+
+## Can it write differently for procurement, owners and engineers?
+
+Yes. The audience and voice reference calibrates the opening, evidence depth and
+CTA to the primary reader's role and decision authority. A procurement lead
+should not receive the same opening as an owner or an engineer. If the brief
+names several readers, the Skill chooses one primary reader and marks the
+secondary audience separately.
+
+## Where does keyword data come from?
+
+The Skill first asks whether you already have a keyword list. If you do, it uses
+that list with its source and date. If not, it can use DataForSEO or another
+authorized source. AI-generated keywords may be proposed only as clearly labeled
+unverified candidates; they are never presented as measured volume or
+difficulty.
+
+## How do you prevent keyword cannibalization?
+
+It builds a cluster map before writing, assigns one primary intent and one focus
+keyword to each URL, and checks existing titles, H1s, URLs, meta descriptions and
+intents. If two pages compete, it records a decision: merge, differentiate,
+canonicalize, link, noindex, retire, or keep with evidence.
+
+## How many words and images will an article have?
+
+There is no universal quota. The Skill recommends a length range and image count
+for the specific article based on its type, reader decision, required evidence
+and the current results, then records the rationale. Images are planned by role
+(product, factory, structure, detail, application, chart) with caption, alt text
+and rights status.
+
+## Will it copy a competitor page?
+
+No. A competitor URL or brand is reference material for understanding the market
+and reader expectations. The Skill does not copy its text, structure, images or
+claims, and the anti-template check requires the article to differ from sibling
+pages.
 
 ## Can I use it for Shopify?
 

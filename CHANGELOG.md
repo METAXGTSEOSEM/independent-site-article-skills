@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.5.0 - 2026-11-20
+
+- Add audience and voice calibration so procurement, owner, engineer and operator readers receive different openings, evidence and CTAs.
+- Add a topic-cluster map, one-intent-per-URL rule, cannibalization decisions and internal-link planning.
+- Add keyword planning with owner-supplied lists, authorized DataForSEO data or clearly labeled AI hypotheses.
+- Add SEO/GEO delivery fields, image planning, and per-article length/image-count rationale.
+- Add anti-template checks against sibling pages and guardrails against training-manual openings.
+- Add cluster, keyword, image and SEO/GEO templates to the article Skill.
+- Bump the article module to `1.3.0`; keep the existing Skill ID.
+
 ## 1.4.0 - 2026-11-20
 
 - Add a primary content-type framework to the article Skill: awareness, selection, comparison, specification, application, troubleshooting, certification and procurement.

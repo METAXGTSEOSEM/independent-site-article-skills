@@ -4,7 +4,7 @@ These stages are editorial conventions, not a Google ranking formula. See `polic
 
 ## Assignment
 
-Create a project directory for each article. Keep the brief, research, source and claim records, draft versions, reviews, final manuscript, and publishing record there. Do not store customer material in the installed Skill.
+Create a project directory for each article. Keep the brief, cluster map, keyword plan, research, source and claim records, image plan, draft versions, reviews, final manuscript, and publishing record there. Do not store customer or unpublished product material in the installed Skill.
 
 Choose the requested mode:
 
@@ -15,30 +15,49 @@ Choose the requested mode:
 
 Select one primary content type from `content-types.md` and record it in the brief. The type determines the reader's job, required sections, evidence and CTA. Do not use a fixed word count as the framework.
 
+Confirm the primary reader role and decision authority, competitor URL or brand if supplied, existing pages or sitemap, keyword assets, and image assets. Read `audience-and-voice.md` and `cluster-and-keywords.md`.
+
 English is the default for content and working documents. An explicit language request overrides it. Ask about missing context when it would change the work; do not require every optional brief field.
+
+## Cluster and keyword plan
+
+Before the outline:
+
+1. Build the cluster map with page roles, parent pillar, sibling pages and internal-link direction.
+2. Ask whether the owner has a keyword list. If yes, use it and preserve source and date.
+3. If no list exists, offer DataForSEO or another authorized source. AI-generated candidates must be labeled unverified; never invent volume, difficulty or rankings.
+4. Assign one primary intent and one focus keyword to the URL.
+5. Check existing titles, H1s, URLs, meta descriptions and intents for cannibalization.
+6. Record the action: merge, differentiate, canonical, link, noindex, retire, or keep with evidence.
+
+Use `cluster-map.csv` and `keyword-plan.csv`. A competitor URL is a research reference, not a template to copy.
 
 ## Research and outline
 
 1. Check relevant official guidance and document updates. Record the date and any access limits.
-2. Read the website and existing content. Decide whether to update, consolidate, or create a page.
+2. Read the website and existing content. Decide whether to update, consolidate, or create a page. Check its cluster role and cannibalization status.
 3. Research the target market and language. Record actual query conditions.
 4. Distinguish exact SERP data from general search samples. Missing volume, difficulty, or rank data stays missing.
 5. Read representative results and primary sources. Government, standards, forum, and video results may explain intent; do not exclude them mechanically.
 6. Identify reader questions and the additional help this article can credibly provide.
+7. Match the opening to the reader's decision and avoid a training-manual structure.
+8. Record the anti-template difference from two or three sibling pages.
 
 Record what each source supports, when it was read, and its scope. Internal material needs a provider, version, and permission to disclose.
 
-The outline connects each section to a reader question, evidence, and a useful conclusion. Apply the selected type's required sections and evidence priorities. Verify internal-link targets. Do not prescribe fixed word counts, keyword density, paragraph length, or FAQ counts.
+The outline connects each section to a reader question, evidence, and a useful conclusion. Apply the selected type's required sections and evidence priorities, the primary reader's decision, and the cluster role. Verify internal-link targets. Do not prescribe fixed word counts, keyword density, paragraph length, or FAQ counts.
 
 ## Draft v1
 
-The writer uses the brief, content type, outline, and evidence. Put important figures, specifications, standards, comparisons, cases, captions, and commercial claims in the claim record. Match the CTA to the type and business model.
+The writer uses the brief, content type, audience notes, cluster map, keyword plan, outline, and evidence. Put important figures, specifications, standards, comparisons, cases, captions, and commercial claims in the claim record. Match the CTA to the type, reader authority and business model.
 
 Answer the main question before adding conditions, reasoning, and next steps. Preserve technical terms that matter to the reader.
 
 Remove unsupported nonessential claims or narrow them to what the evidence supports. Missing evidence for a central conclusion blocks that conclusion. Do not invent first-hand experience, credentials, measurements, or customer stories.
 
 Keep citations useful and accessible. Internal review notes do not belong in publishable prose.
+
+Complete the SEO/GEO delivery sheet and image plan. Recommend article length and image count with a rationale; do not use a universal word quota or "one image every N words."
 
 ## Review v1 and revise v2
 
@@ -48,7 +67,7 @@ Fact review checks whether the source supports the actual wording, including uni
 
 High-risk technical or safety claims need suitable evidence or expert review. A manufacturer's statement is not an independent test.
 
-Search review checks intent, business relevance, original help, type fit, structure, entity meaning, titles, summaries, links, and technical evidence. Scores and formulas cannot offset factual problems.
+Search review checks intent, business relevance, original help, type fit, audience fit, cluster role, cannibalization, keyword mapping, structure, entity meaning, titles, summaries, links, and technical evidence. Scores and formulas cannot offset factual problems.
 
 Record changes by issue ID: fixed, not adopted with evidence, or awaiting information. Recheck new factual claims and substantial structural changes. Close blocking issues before language editing.
 
@@ -70,6 +89,11 @@ Verify:
 
 - The reader's task is answered and the promised value is present.
 - The selected content type's gate is met; a generic article is not substituted for the chosen type.
+- The primary reader sees a decision-led opening, not a training manual.
+- The anti-template fingerprint is recorded and the page is not a near-duplicate of a sibling.
+- The cluster role, cannibalization decision and internal links are consistent.
+- The keyword plan and SEO/GEO fields use one focus keyword and unique title/H1/URL/meta.
+- The image plan has purpose, caption, alt text and rights status.
 - Editing did not change figures, conditions, certainty, negation, or attribution.
 - Titles, metadata, captions, tables, and CTA match the manuscript.
 - The specified editor was actually used and coverage limits are disclosed.
@@ -85,7 +109,9 @@ Return `REWORK` to the relevant role. Recheck affected stages after revision. St
 
 Record the accepted file, version, reviewer, time, and available hash. Substantive changes invalidate the earlier final decision.
 
-Deliver the manuscript, CMS fields, image and link suggestions, source and claim records, and review results separately.
+Deliver the manuscript, cluster map, keyword plan, SEO/GEO delivery sheet, image plan, source and claim records, and review results separately.
+
+Include a character/length rationale and an image-count/placement rationale for the specific article.
 
 Editorial status: `PASS`, `REWORK`, or `BLOCKED`.
 

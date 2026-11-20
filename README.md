@@ -41,11 +41,11 @@ Product pages, case studies, and UI/UX improvements are planned as separate
 modules with their own briefs, review criteria, and deliverables. They are not
 included in the current release.
 
-**Current release:** `1.4.0` · **Available modules:** `1` · **License:** MIT
+**Current release:** `1.5.0` · **Available modules:** `1` · **License:** MIT
 
 **Repository:** [METAXGTSEOSEM/wordpress-content-skills](https://github.com/METAXGTSEOSEM/wordpress-content-skills).
 The article Skill keeps its existing ID, `independent-site-article`, and is now
-version `1.2.0`.
+version `1.3.0`.
 
 The workflow produces a manuscript and WordPress publishing fields. It runs in
 a compatible agent host; it is not a WordPress plugin. CMS access and publishing
@@ -56,8 +56,11 @@ authorization are separate.
 - A researched, evidence-based draft in the requested language.
 - A visible review decision: `PASS`, `REWORK` or `BLOCKED`.
 - Source and claim records, including missing evidence.
+- A cluster map, keyword plan and cannibalization check.
 - H1, SEO title, meta description, slug, excerpt, image notes and internal-link
   suggestions.
+- A recommended article length and image count with a rationale, not a fixed quota.
+- An image plan with purpose, placement, caption, alt text and rights status.
 - A WordPress field pack and publishing checklist.
 - A separate technical status: `TECH_PASS`, `TECH_REWORK` or `TECH_NOT_CHECKED`.
 
@@ -86,12 +89,28 @@ for required sections, type-specific review gates and guardrails. If the brief
 does not name a type, the Skill infers one from the reader's decision stage and
 records the assumption.
 
+## Audience, cluster and keyword checks
+
+- The opening and CTA follow the primary reader's role and decision authority;
+  procurement, owners and engineers do not get the same article.
+- The page must have one cluster role, one primary intent and one focus keyword;
+  existing URLs are checked for cannibalization before a new target is assigned.
+- If you already have a keyword list, it is used with its source and date. If
+  not, the Skill can use DataForSEO when authorized; AI-generated keywords are
+  labeled unverified and never presented as measured volume.
+- Article length and image count are recommended per article with a rationale.
+  There is no universal word count or "one image every N words" rule.
+
+See [cluster and keywords](skills/independent-site-article/references/cluster-and-keywords.md)
+and [SEO/GEO delivery](skills/independent-site-article/references/seo-geo-delivery.md).
+
 ## Who it is for
 
 - WordPress site owners and editors who publish buying guides or educational content.
 - SEO / GEO operators who need a repeatable research, outline and review process.
 - People who need a clear article framework for search results and AI-assisted answers, not just a keyword list.
 - People who need to place an article within an existing topic structure and verify its internal-link targets.
+- People who need a keyword plan with intent and search-volume provenance, not AI-guessed numbers.
 - B2B teams preparing quote-request, product-education or comparison pages.
 - B2C teams preparing article-led product content.
 - Teams with incomplete product knowledge that need missing specifications, evidence and buyer questions surfaced before drafting.
@@ -118,14 +137,21 @@ Use independent-site-article.
 
 Brief: [paste or link your brief]
 Market: [country]
-Audience: [reader and knowledge level]
+Audience role/decision authority: [procurement, owner, engineer, operator, end user]
 Business model: [B2B or B2C]
 Content type: [if known, or ask the Skill to infer one]
+Competitor URL/brand: [optional reference, not a template to copy]
+Existing cluster/pages: [sitemap or relevant URLs]
+Keyword assets: [list/file or none]
+Keyword data: [owner list / DataForSEO / AI hypotheses only]
+Image assets: [product, factory, structure, detail, application, none]
 Goal: [what the reader should understand or do]
 Evidence: [datasheets, first-party material, sources]
 
 Write in English. Research before drafting.
 Mark missing product evidence as missing; do not invent it.
+Check keyword cannibalization before assigning the focus keyword.
+Recommend article length and image count with a reason.
 Use humanizer for language editing, then an independent final reviewer.
 Deliver the article, source and claim records, review report, and WordPress fields.
 Do not upload or publish.
@@ -156,7 +182,7 @@ placeholders or product details as real claims.
 
 | Workflow | Status | Installable Skill | Scope |
 | :--- | :--- | :--- | :--- |
-| **Articles** | **Available · v1.2.0** | [`independent-site-article`](skills/independent-site-article/SKILL.md) | Type-aware articles: awareness, selection, comparison, specification, application, troubleshooting, certification and procurement. Research, evidence checks, SEO / GEO review, language editing, and final review. |
+| **Articles** | **Available · v1.3.0** | [`independent-site-article`](skills/independent-site-article/SKILL.md) | Type-aware articles with audience calibration, cluster and keyword planning, cannibalization checks, SEO / GEO delivery, image planning, evidence checks, language editing, and final review. |
 | **Product pages** | Planned | Not released | Product specifications, purchase intent, substantiated benefits, comparisons, and conversion review. |
 | **Case studies** | Planned | Not released | Customer permission, project evidence, measured outcomes, narrative, and attribution review. |
 | **UI/UX improvements** | Planned | Not released | Existing-site audit, page structure, design handoff, responsive behavior, and implementation QA. |
@@ -275,8 +301,8 @@ skills/
   independent-site-article/      The installable article workflow
     SKILL.md
     agents/openai.yaml
-    references/                  Workflow, content types, roles, and policy sources
-    assets/                      Blank production templates
+    references/                  Workflow, content types, audience, cluster/keywords, SEO/GEO and policy sources
+    assets/                      Brief, cluster, keyword, image and delivery templates
 examples/
   project-management-tool-article/  Complete synthetic article package
 docs/

@@ -9,11 +9,17 @@ Status: synthetic demonstration
 - Business model: B2B SaaS evaluation
 - Market: United States
 - Language: English
+- Competitor URL or brand: not supplied in this synthetic brief
 
 ## Audience
 
 Operations leads at small agencies who are comparing project management tools
 for a team of roughly 10 to 30 people.
+
+- Primary reader role and decision authority: operations lead; recommends the shortlist and approves the trial
+- Existing cluster or sitemap: not supplied
+- Keyword list supplied: no
+- Keyword-data path: AI hypotheses only, clearly unverified
 
 ## Reader goal
 
@@ -44,6 +50,8 @@ requirements must be obtained before publication.
 - Do not claim one tool is the most popular or the cheapest without current evidence.
 - Distinguish general evaluation guidance from verified product facts.
 - Mark every vendor-specific claim that still needs confirmation.
+- Use no competitor brand as a factual benchmark without a current source.
+- Recommend length and image count with a rationale; do not impose a fixed quota.
 
 ## Desired deliverables
 

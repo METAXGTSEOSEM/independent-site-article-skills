@@ -26,6 +26,21 @@ The labels are B2B-oriented, but the same jobs apply to B2C content. A B2C
 selection guide may use price, delivery and returns as criteria; a B2B guide may
 use specifications, service and qualification.
 
+## Type is not the whole plan
+
+The same type still changes with the reader and the cluster role:
+
+- A selection guide for a procurement lead leads with comparison, terms and
+  qualification; for an owner it leads with commercial risk and responsibility;
+  for an engineer it leads with constraints and verification.
+- A cluster article solves one intent and links up to its pillar; a pillar page
+  explains the category and routes readers to multiple cluster pages.
+- A comparison page and a product page may both support a purchase, but they
+  must not target the same intent and focus keyword.
+
+Read `audience-and-voice.md` and `cluster-and-keywords.md` before turning the type
+into an outline.
+
 ## How to select the type
 
 1. What must the reader decide or do after reading?
@@ -60,5 +75,7 @@ type with clearly linked follow-ups.
 - Do not present keyword density or keyword placement as a ranking rule.
 - Do not copy a competitor outline without checking whether its sections fit the
   reader and the available evidence.
+- Do not assign two URLs the same intent and focus keyword.
+- Record the anti-template difference from sibling pages.
 - Do not turn one article into a complete site-wide topic-cluster plan.
 - Mark missing type-critical evidence as a blocker instead of writing around it.
