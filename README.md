@@ -19,7 +19,7 @@
 
 <p align="center">
   <a href="#quickstart">Quickstart</a> ·
-  <a href="examples/fixed-scissor-lift-article/README.md">See a full example</a> ·
+  <a href="examples/project-management-tool-article/README.md">See a full example</a> ·
   <a href="#workflow-catalog">Workflows</a> ·
   <a href="#installation">Install</a> ·
   <a href="docs/compatibility.md">Compatibility</a> ·
@@ -78,7 +78,7 @@ legal, regulatory or product-engineering review.
 
 1. Install the complete `skills/independent-site-article/` folder and the
    required Language Editor listed below.
-2. Copy the [example brief](examples/fixed-scissor-lift-article/brief.md) or write
+2. Copy the [example brief](examples/project-management-tool-article/brief.md) or write
    your own.
 3. Ask the agent:
 
@@ -104,18 +104,18 @@ Missing capabilities limit what can be verified.
 
 ## See a full example
 
-The [fixed scissor lift example](examples/fixed-scissor-lift-article/README.md)
+The [project management tool example](examples/project-management-tool-article/README.md)
 shows the complete handoff:
 
 | Stage | File |
 | --- | --- |
-| Brief | [brief.md](examples/fixed-scissor-lift-article/brief.md) |
-| Evidence ledger | [sources.csv](examples/fixed-scissor-lift-article/sources.csv) |
-| Claim checks | [claims.csv](examples/fixed-scissor-lift-article/claims.csv) |
-| First draft | [draft-v1.md](examples/fixed-scissor-lift-article/draft-v1.md) |
-| Review decision | [review.md](examples/fixed-scissor-lift-article/review.md) |
-| Final article | [final.md](examples/fixed-scissor-lift-article/final.md) |
-| WordPress fields | [wordpress-fields.md](examples/fixed-scissor-lift-article/wordpress-fields.md) |
+| Brief | [brief.md](examples/project-management-tool-article/brief.md) |
+| Evidence ledger | [sources.csv](examples/project-management-tool-article/sources.csv) |
+| Claim checks | [claims.csv](examples/project-management-tool-article/claims.csv) |
+| First draft | [draft-v1.md](examples/project-management-tool-article/draft-v1.md) |
+| Review decision | [review.md](examples/project-management-tool-article/review.md) |
+| Final article | [final.md](examples/project-management-tool-article/final.md) |
+| WordPress fields | [wordpress-fields.md](examples/project-management-tool-article/wordpress-fields.md) |
 
 The example is synthetic and clearly labeled. Do not publish its fictional brand,
 placeholders or product details as real claims.
@@ -205,7 +205,7 @@ independent review as pending.
   description, slug, excerpt, taxonomy, media, schema and B2B/B2C CTA differences.
 - [Publishing checklist](docs/publishing-checklist.md): what to verify before,
   during and after publishing.
-- [Example field pack](examples/fixed-scissor-lift-article/wordpress-fields.md):
+- [Example field pack](examples/project-management-tool-article/wordpress-fields.md):
   a concrete handoff an editor can review.
 
 The Skill does not write to WordPress by default. A CMS connection, publishing
@@ -246,7 +246,7 @@ skills/
     references/                  Workflow, roles, and policy sources
     assets/                      Blank production templates
 examples/
-  fixed-scissor-lift-article/    Complete synthetic article package
+  project-management-tool-article/  Complete synthetic article package
 docs/
   architecture.md                Packaging and compatibility rules
   compatibility.md               Host requirements and limits

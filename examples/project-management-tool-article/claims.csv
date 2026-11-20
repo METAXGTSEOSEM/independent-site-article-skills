@@ -1,0 +1,6 @@
+claim_id,claim,status,evidence,notes
+C1,The right tool depends on the agency workflow and client access model,Editorial guidance,S4,Do not imply one universal winner
+C2,Permissions and guest access should be tested with a real client scenario,Editorial guidance,S1 S3,No vendor-specific assertion
+C3,Pricing should be checked against current plan limits and billing terms,Editorial guidance,S2,Do not quote a price unless supplied
+C4,Migration effort includes data cleanup and team adoption,Editorial guidance,S3,Do not promise a migration time
+C5,Trial notes should record the same tasks for each vendor,Editorial guidance,S3,Method guidance only
