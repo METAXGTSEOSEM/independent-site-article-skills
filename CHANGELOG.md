@@ -16,6 +16,7 @@
 - Add a complete synthetic article package from brief and evidence ledger through review, final copy, and WordPress fields.
 - Add WordPress field mapping, publishing checklist, compatibility, data handling, and FAQ documentation.
 - Add public quickstart, release badges, issue templates, and community links for usage questions and redacted examples.
+- Exclude repository-owner and bot events from feedback notification to avoid self-notification noise; keep manual dispatch for delivery tests.
 
 ## 1.2.0 - 2026-11-18
 

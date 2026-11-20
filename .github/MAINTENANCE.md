@@ -7,7 +7,9 @@ This is a maintainer process, not an installable content Skill.
 GitHub Issues, issue and PR conversation comments, PRs, reviews, review comments,
 Discussions and discussion replies trigger Feedback intake when created,
 materially edited or reopened as listed in the workflow. Bot-originated events
-are excluded to prevent acknowledgment loops. There is no timer, local
+and events authored by the repository owner are excluded to prevent
+acknowledgment loops and self-notification noise. The manual dispatch entry
+remains available for an intentional delivery test. There is no timer, local
 heartbeat, scheduled crawl or daily validation schedule.
 
 The intake job has no notification secrets or write permissions. It normalizes

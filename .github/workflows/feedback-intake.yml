@@ -22,7 +22,7 @@ permissions:
 
 jobs:
   capture:
-    if: github.event.sender.type != 'Bot'
+    if: github.event_name == 'workflow_dispatch' || (github.event.sender.type != 'Bot' && github.event.sender.login != github.repository_owner)
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
