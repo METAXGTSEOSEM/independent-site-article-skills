@@ -37,7 +37,7 @@ change a live site.
 
 Do not publish when:
 
-- a load rating, certification, price, lead time or warranty is unverified;
+- a product specification, certification, price, lead time or warranty is unverified;
 - a customer quote or image lacks permission;
 - the page would compete with an existing page for the same intent;
 - the CTA or tracking is untested;

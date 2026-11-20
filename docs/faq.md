@@ -33,9 +33,29 @@ site's existing setup. Plugin labels and behavior vary by version.
 
 ## What happens when product data is missing?
 
-The workflow marks it as missing or asks for it. It must not invent load
-ratings, dimensions, certifications, prices, lead times, warranties or test
-results.
+The workflow marks it as missing or asks for it. It must not invent product
+specifications, certifications, prices, lead times, warranties or test results.
+
+## Can it help if I do not know the product well?
+
+Yes, at the level of structure and evidence. It turns an incomplete brief into
+questions, missing-evidence records and a draft plan. It does not replace the
+product owner, engineer or legal reviewer, and it must not fill gaps with
+plausible-sounding specifications.
+
+## Can it help with topic clusters?
+
+The current workflow can define one article's role, propose internal-link
+targets and verify that those targets exist. A site-wide pillar-and-cluster
+planning module is not released yet; do not describe a single article as a
+complete cluster strategy.
+
+## Will it remove the AI feel from a draft?
+
+The workflow routes the manuscript through the specified Humanizer and then an
+independent review. That can remove generic phrasing and repetition, but it does
+not guarantee a particular AI-detector score, authorship result or editorial
+quality without human review.
 
 ## Can I use it for Shopify?
 

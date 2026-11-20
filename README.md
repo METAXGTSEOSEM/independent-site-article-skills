@@ -67,12 +67,21 @@ been published, indexed, ranked or cited by an AI search service.
 ## Who it is for
 
 - WordPress site owners and editors who publish buying guides or educational content.
-- SEO / GEO operators who need a repeatable research and review process.
-- B2B teams preparing quote-request or product-education pages.
+- SEO / GEO operators who need a repeatable research, outline and review process.
+- People who need a clear article framework for search results and AI-assisted answers, not just a keyword list.
+- People who need to place an article within an existing topic structure and verify its internal-link targets.
+- B2B teams preparing quote-request, product-education or comparison pages.
 - B2C teams preparing article-led product content.
+- Teams with incomplete product knowledge that need missing specifications, evidence and buyer questions surfaced before drafting.
+- Writers and editors revising AI-assisted drafts that feel generic, repetitive or over-polished.
 
-It is not an auto-publishing plugin, a ranking guarantee, or a replacement for
-legal, regulatory or product-engineering review.
+It does not replace product, legal or engineering review. It does not invent
+missing product facts, guarantee rankings or AI citations, or guarantee a
+particular AI-detector result.
+
+Topic-cluster strategy is not yet a separate module. The current workflow helps
+define one article's role and verify its internal links; it does not claim to
+produce a complete site-wide cluster plan.
 
 ## Quickstart
 
