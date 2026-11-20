@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="docs/assets/cover.svg" alt="WordPress Content Skills. Articles available; product pages, case studies, and UI/UX planned." width="1200">
-</p>
+# WordPress Content Skills
 
 <p align="center">
   <strong>Turn a content brief into a sourced, reviewed WordPress article.</strong><br>
@@ -29,10 +27,11 @@
   <a href="CONTRIBUTING.md">Contribute</a>
 </p>
 
+<p align="center">
+  <img src="docs/assets/cover.svg" alt="WordPress Content Skills. Articles available; product pages, case studies, and UI/UX planned." width="1200">
+</p>
+
 ---
-
-# WordPress Content Skills
-
 WordPress Content Skills provides evidence-based article writing and review for
 WordPress websites. The released article workflow covers research, drafting,
 fact-checking, SEO content review, and generative engine optimization (GEO) /
