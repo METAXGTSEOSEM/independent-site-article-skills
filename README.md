@@ -1,4 +1,4 @@
-# WordPress Content Skills
+<h1 align="center">WordPress Content Skills</h1>
 
 <p align="center">
   <strong>Turn a content brief into a sourced, reviewed WordPress article.</strong><br>
@@ -25,6 +25,11 @@
   <a href="docs/compatibility.md">Compatibility</a> ·
   <a href="docs/faq.md">FAQ</a> ·
   <a href="CONTRIBUTING.md">Contribute</a>
+</p>
+
+<p align="center">
+  <strong>⭐ Star this repository</strong> to follow releases, or share it with
+  WordPress, SEO and GEO people who write a lot of product-led content.
 </p>
 
 <p align="center">
