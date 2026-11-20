@@ -153,7 +153,8 @@ Mark missing product evidence as missing; do not invent it.
 Check keyword cannibalization before assigning the focus keyword.
 Recommend article length and image count with a reason.
 Use humanizer for language editing, then an independent final reviewer.
-Deliver the article, source and claim records, review report, and WordPress fields.
+Deliver the article, cluster map, keyword plan, SEO/GEO sheet, image plan,
+source and claim records, review report, and WordPress fields.
 Do not upload or publish.
 ```
 
