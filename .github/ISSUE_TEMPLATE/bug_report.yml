@@ -1,0 +1,62 @@
+name: Bug report
+description: Report a reproducible problem with the article workflow or a template.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Remove credentials, customer names and private data before submitting.
+        This project does not publish or modify a live site.
+  - type: input
+    id: version
+    attributes:
+      label: Skill version
+      description: The version in SKILL.md or the catalog.
+      placeholder: "1.1.0"
+    validations:
+      required: true
+  - type: input
+    id: host
+    attributes:
+      label: Host and model
+      description: The agent host and model you used, if known.
+      placeholder: "Codex, Claude Code, Cursor, other"
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: What did you ask for?
+      description: Include the relevant part of the prompt or a minimal reproducible brief.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include the review decision, error message or output difference.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted evidence
+      description: A short sample, log or screenshot with private data removed.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and discussions.
+          required: true
+        - label: I removed credentials, customer data and private messages.
+          required: true
+        - label: This report is about the Skill or its templates, not a request to publish a live page.
+          required: true

@@ -1,0 +1,51 @@
+name: Feature request
+description: Suggest a workflow, template, field mapping or documentation improvement.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the job to be done, not only the feature name. Planned modules are not installable until they are implemented and tested.
+  - type: dropdown
+    id: workflow
+    attributes:
+      label: Workflow area
+      options:
+        - Article
+        - Product page
+        - Case study
+        - WordPress publishing
+        - SEO / GEO review
+        - Documentation
+        - Integration
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+      description: Describe the current workflow and where it fails.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What should the result look like?
+      description: Include inputs, deliverables and acceptance criteria if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: I understand that a planned module is not available until it is implemented and tested.
+          required: true
+        - label: This request does not require automatic publishing or changes to a live site.
+          required: true

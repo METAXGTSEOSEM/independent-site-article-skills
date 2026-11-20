@@ -55,6 +55,13 @@ Use text labels for status. Keep planned and available modules visibly distinct.
 
 Use WordPress Content Skills as the display name and `https://github.com/METAXGTSEOSEM/wordpress-content-skills` as the repository URL. Installation instructions must be host-independent and preserve each complete Skill folder and required language-editor routing.
 
+## Examples and public guidance
+
+Examples must be complete enough to inspect, but they must not present fictional
+product data as verified. Label synthetic samples and preserve missing evidence.
+When a change alters the user-facing deliverable, update the relevant example and
+check that its links still resolve.
+
 ## Release notes
 
 Record added capabilities, behavior changes, compatibility, dependencies, and what was tested. Do not claim that editing policy references proves ranking or citation improvements.

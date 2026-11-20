@@ -49,6 +49,16 @@ Future modules can reuse this execution pattern while defining different reviewe
 
 Repository maintenance belongs under `.github/` as an internal contributor workflow, outside the product catalog, Skill discovery, and installation.
 
+## Public examples and guides
+
+`examples/` contains complete, clearly labeled synthetic packages that show the
+input, review evidence and final handoff. Examples are documentation, not
+installable Skills. `docs/` contains field mapping, publishing checks,
+compatibility, data handling and FAQ guidance for users.
+
+Do not present a synthetic sample as a real customer result. Keep sample product
+data visibly fictional or marked as missing.
+
 ## UI and documentation
 
 The repository interface is the GitHub README: a local SVG cover, navigation, a status catalog, host-independent installation instructions, and a workflow diagram.

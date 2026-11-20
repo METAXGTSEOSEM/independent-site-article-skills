@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a usage question
+    url: https://github.com/METAXGTSEOSEM/wordpress-content-skills/discussions/categories/q-a
+    about: Ask about installation, inputs, review states or a workflow decision.
+  - name: Share an article package
+    url: https://github.com/METAXGTSEOSEM/wordpress-content-skills/discussions/categories/show-and-tell
+    about: Show a redacted output, a before/after edit or a useful workflow adaptation.
+  - name: Read the FAQ
+    url: https://github.com/METAXGTSEOSEM/wordpress-content-skills/blob/main/docs/faq.md
+    about: Check common questions before opening a new discussion.

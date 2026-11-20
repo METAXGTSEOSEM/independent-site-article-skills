@@ -3,32 +3,123 @@
 </p>
 
 <p align="center">
-  <strong>Research. Write. Verify.</strong><br>
-  Agent Skills for WordPress articles, SEO content, and GEO / AI search review.
+  <strong>Turn a content brief into a sourced, reviewed WordPress article.</strong><br>
+  Research, drafting, fact-checking, SEO / GEO review, human editing, and a publish-ready package.
 </p>
 
 <p align="center">
+  <a href="https://github.com/METAXGTSEOSEM/wordpress-content-skills/releases">
+    <img src="https://img.shields.io/github/v/release/METAXGTSEOSEM/wordpress-content-skills?display_name=tag&sort=semver" alt="Release">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/github/license/METAXGTSEOSEM/wordpress-content-skills" alt="License: MIT">
+  </a>
+  <a href="https://github.com/METAXGTSEOSEM/wordpress-content-skills/actions/workflows/validate.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/METAXGTSEOSEM/wordpress-content-skills/validate.yml?branch=main&label=validate" alt="Validate">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#quickstart">Quickstart</a> ·
+  <a href="examples/fixed-scissor-lift-article/README.md">See a full example</a> ·
+  <a href="#workflow-catalog">Workflows</a> ·
   <a href="#installation">Install</a> ·
-  <a href="#workflow-catalog">Browse workflows</a> ·
-  <a href="docs/architecture.md">Architecture</a> ·
-  <a href="docs/roadmap.md">Roadmap</a> ·
-  <a href="CONTRIBUTING.md">Contribute</a> ·
-  <a href="CHANGELOG.md">Changelog</a>
+  <a href="docs/compatibility.md">Compatibility</a> ·
+  <a href="docs/faq.md">FAQ</a> ·
+  <a href="CONTRIBUTING.md">Contribute</a>
 </p>
 
 ---
 
 # WordPress Content Skills
 
-WordPress Content Skills provides evidence-based article writing and review for WordPress websites. The released article workflow covers research, drafting, fact-checking, SEO content review, and generative engine optimization (GEO) / AI search considerations.
+WordPress Content Skills provides evidence-based article writing and review for
+WordPress websites. The released article workflow covers research, drafting,
+fact-checking, SEO content review, and generative engine optimization (GEO) /
+AI search considerations.
 
-Product pages, case studies, and UI/UX improvements are planned as separate modules with their own briefs, review criteria, and deliverables. They are not included in the current release.
+Product pages, case studies, and UI/UX improvements are planned as separate
+modules with their own briefs, review criteria, and deliverables. They are not
+included in the current release.
 
 **Current release:** `1.3.0` · **Available modules:** `1` · **License:** MIT
 
-**Repository:** [METAXGTSEOSEM/wordpress-content-skills](https://github.com/METAXGTSEOSEM/wordpress-content-skills). The article Skill keeps its existing ID, `independent-site-article`, and version, `1.1.0`.
+**Repository:** [METAXGTSEOSEM/wordpress-content-skills](https://github.com/METAXGTSEOSEM/wordpress-content-skills).
+The article Skill keeps its existing ID, `independent-site-article`, and version,
+`1.1.0`.
 
-The workflow produces a manuscript and WordPress publishing fields. It runs in a compatible agent host; it is not a WordPress plugin. CMS access and publishing authorization are separate.
+The workflow produces a manuscript and WordPress publishing fields. It runs in
+a compatible agent host; it is not a WordPress plugin. CMS access and publishing
+authorization are separate.
+
+## What you get
+
+- A researched, evidence-based draft in the requested language.
+- A visible review decision: `PASS`, `REWORK` or `BLOCKED`.
+- Source and claim records, including missing evidence.
+- H1, SEO title, meta description, slug, excerpt, image notes and internal-link
+  suggestions.
+- A WordPress field pack and publishing checklist.
+- A separate technical status: `TECH_PASS`, `TECH_REWORK` or `TECH_NOT_CHECKED`.
+
+`PASS` confirms the editorial workflow completed. It does not mean the page has
+been published, indexed, ranked or cited by an AI search service.
+
+## Who it is for
+
+- WordPress site owners and editors who publish buying guides or educational content.
+- SEO / GEO operators who need a repeatable research and review process.
+- B2B teams preparing quote-request or product-education pages.
+- B2C teams preparing article-led product content.
+
+It is not an auto-publishing plugin, a ranking guarantee, or a replacement for
+legal, regulatory or product-engineering review.
+
+## Quickstart
+
+1. Install the complete `skills/independent-site-article/` folder and the
+   required Language Editor listed below.
+2. Copy the [example brief](examples/fixed-scissor-lift-article/brief.md) or write
+   your own.
+3. Ask the agent:
+
+```text
+Use independent-site-article.
+
+Brief: [paste or link your brief]
+Market: [country]
+Audience: [reader and knowledge level]
+Business model: [B2B or B2C]
+Goal: [what the reader should understand or do]
+Evidence: [datasheets, first-party material, sources]
+
+Write in English. Research before drafting.
+Mark missing product evidence as missing; do not invent it.
+Use humanizer for language editing, then an independent final reviewer.
+Deliver the article, source and claim records, review report, and WordPress fields.
+Do not upload or publish.
+```
+
+No specific model, paid research provider or CMS connection is required.
+Missing capabilities limit what can be verified.
+
+## See a full example
+
+The [fixed scissor lift example](examples/fixed-scissor-lift-article/README.md)
+shows the complete handoff:
+
+| Stage | File |
+| --- | --- |
+| Brief | [brief.md](examples/fixed-scissor-lift-article/brief.md) |
+| Evidence ledger | [sources.csv](examples/fixed-scissor-lift-article/sources.csv) |
+| Claim checks | [claims.csv](examples/fixed-scissor-lift-article/claims.csv) |
+| First draft | [draft-v1.md](examples/fixed-scissor-lift-article/draft-v1.md) |
+| Review decision | [review.md](examples/fixed-scissor-lift-article/review.md) |
+| Final article | [final.md](examples/fixed-scissor-lift-article/final.md) |
+| WordPress fields | [wordpress-fields.md](examples/fixed-scissor-lift-article/wordpress-fields.md) |
+
+The example is synthetic and clearly labeled. Do not publish its fictional brand,
+placeholders or product details as real claims.
 
 ## Workflow catalog
 
@@ -39,7 +130,9 @@ The workflow produces a manuscript and WordPress publishing fields. It runs in a
 | **Case studies** | Planned | Not released | Customer permission, project evidence, measured outcomes, narrative, and attribution review. |
 | **UI/UX improvements** | Planned | Not released | Existing-site audit, page structure, design handoff, responsive behavior, and implementation QA. |
 
-Only **Available** modules can be installed. Planned modules are specifications, not placeholder Skills. See the [roadmap](docs/roadmap.md) and machine-readable [catalog](catalog.json).
+Only **Available** modules can be installed. Planned modules are specifications,
+not placeholder Skills. See the [roadmap](docs/roadmap.md) and machine-readable
+[catalog](catalog.json).
 
 ## Installation
 
@@ -49,13 +142,18 @@ Use your agent host's documented Skill installation method. The source repositor
 https://github.com/METAXGTSEOSEM/wordpress-content-skills
 ```
 
-1. Download the repository or use a host-supported repository installer.
+1. Download the release ZIP or use a host-supported repository installer.
 2. Select only the available article module at `skills/independent-site-article/`.
-3. Keep the complete folder, including `SKILL.md`, `references/`, `assets/`, and `agents/`. Copying only `SKILL.md` leaves required instructions and templates behind.
-4. Install the required language editor listed below and make both Skills available to the coordinating assistant.
-5. Confirm the host can load the Skill and its supporting files before starting an article.
+3. Keep the complete folder, including `SKILL.md`, `references/`, `assets/` and
+   `agents/`. Copying only `SKILL.md` leaves required instructions and templates behind.
+4. Install the required language editor listed below and make both Skills
+   available to the coordinating assistant.
+5. Confirm the host can load the Skill and its supporting files before starting
+   an article.
 
-For discovery and installation, use only entries marked `available` in [catalog.json](catalog.json). Planned modules have no installation path. Installing the article module does not register seven global subagents.
+For discovery and installation, use only entries marked `available` in
+[catalog.json](catalog.json). Planned modules have no installation path.
+Installing the article module does not register seven global subagents.
 
 ### Language editing dependencies
 
@@ -64,32 +162,13 @@ For discovery and installation, use only entries marked `available` in [catalog.
 | English, the default | `humanizer` | [blader/humanizer](https://github.com/blader/humanizer) |
 | Chinese, only when explicitly requested | `humanizer-zh` | [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) |
 
-All repository documentation, templates, Skill instructions, and interface metadata are in English. An explicit article-language request may override the English output default.
+All repository documentation, templates, Skill instructions, and interface
+metadata are in English. An explicit article-language request may override the
+English output default.
 
-The required editor must actually be available and used. Missing dependencies are reported; ordinary rewriting is never labeled as a completed Humanizer pass. Third-party Skill text is not bundled.
-
-## Start your first article
-
-Use one main conversation per article. The coordinating assistant handles research, writing, reviews, and revisions.
-
-```text
-Use independent-site-article.
-
-Website: [your WordPress website]
-Topic or fixed title: [your topic]
-Target market: [country]
-Audience: [reader and knowledge level]
-Business model: [B2B or B2C]
-Goal: [what the reader should understand or do]
-Available evidence: [specifications, original material, sources]
-
-Write in English. Research before drafting.
-Use humanizer for language editing, then an independent final reviewer.
-Save sources, draft versions, and review results.
-Deliver the article and publishing fields. Do not upload or publish.
-```
-
-Use `$independent-site-article` where the host supports explicit Skill invocation. No specific model, paid research provider, or CMS connection is required. Missing capabilities limit what can be verified.
+The required editor must actually be available and used. Missing dependencies
+are reported; ordinary rewriting is never labeled as a completed Humanizer pass.
+Third-party Skill text is not bundled.
 
 ## How an article moves through review
 
@@ -117,20 +196,35 @@ flowchart LR
 | Final reviewer | Independent assessment of the exact edited version. |
 | Publishing reviewer | CMS and page checks within the authorized scope. |
 
-The coordinator can pass these roles to available general-purpose subagents. A host without delegation can produce a draft and self-review report, but must mark independent review as pending.
+The coordinator can pass these roles to available general-purpose subagents. A
+host without delegation can produce a draft and self-review report, but must mark
+independent review as pending.
 
-## What you receive
+## WordPress handoff
 
-- A publishable-format draft in the requested language.
-- H1, SEO title, meta description, slug, image notes, and relevant internal links.
-- Source and claim records.
-- A version-specific review decision: `PASS`, `REWORK`, or `BLOCKED`.
-- A separate technical status: `TECH_PASS`, `TECH_REWORK`, or `TECH_NOT_CHECKED`.
+- [WordPress publishing fields](docs/wordpress-fields.md): H1, SEO title, meta
+  description, slug, excerpt, taxonomy, media, schema and B2B/B2C CTA differences.
+- [Publishing checklist](docs/publishing-checklist.md): what to verify before,
+  during and after publishing.
+- [Example field pack](examples/fixed-scissor-lift-article/wordpress-fields.md):
+  a concrete handoff an editor can review.
 
-`PASS` confirms the editorial workflow completed. It does not mean the page has been published, indexed, ranked, or cited by an AI search service.
+The Skill does not write to WordPress by default. A CMS connection, publishing
+action or production change requires separate authorization.
+
+## Compatibility and data
+
+- [Compatibility and requirements](docs/compatibility.md): tested and untested
+  hosts, optional research, subagent support and review limitations.
+- [Data handling and permissions](docs/data-handling.md): what the Skill reads,
+  what it writes, and what it does not do by default.
+- [FAQ](docs/faq.md): plugin vs Skill, publishing, API keys, languages, SEO
+  plugins, missing data and updates.
+
+## Quality boundaries
 
 <details>
-<summary><strong>Quality boundaries</strong></summary>
+<summary><strong>What the workflow will not do</strong></summary>
 
 - Verify current primary sources instead of treating the policy baseline as permanently current.
 - Do not invent specifications, testimonials, experience, certifications, statistics, or search data.
@@ -142,24 +236,33 @@ The coordinator can pass these roles to available general-purpose subagents. A h
 
 </details>
 
-## Built to grow
+## Project layout
 
 ```text
 catalog.json                     Available and planned modules
 skills/
-  independent-site-article/      The first installable workflow
+  independent-site-article/      The installable article workflow
     SKILL.md
     agents/openai.yaml
     references/                  Workflow, roles, and policy sources
     assets/                      Blank production templates
+examples/
+  fixed-scissor-lift-article/    Complete synthetic article package
 docs/
-  architecture.md               Packaging and compatibility rules
-  roadmap.md                    Product, case-study, and UI/UX specifications
+  architecture.md                Packaging and compatibility rules
+  compatibility.md               Host requirements and limits
+  data-handling.md               Reads, writes and permissions
+  faq.md                         Common questions
+  publishing-checklist.md        WordPress pre/post-publish checks
+  roadmap.md                     Planned workflow specifications
+  wordpress-fields.md            Field mapping and handoff guidance
 scripts/
-  validate.py                   Catalog, packaging, language, and link checks
+  validate.py                    Catalog, packaging, language, and link checks
 ```
 
-To add a workflow, follow [CONTRIBUTING.md](CONTRIBUTING.md). Each installable module must remain self-contained because a host may copy its folder without the rest of this repository.
+To add a workflow, follow [CONTRIBUTING.md](CONTRIBUTING.md). Each installable
+module must remain self-contained because a host may copy its folder without the
+rest of this repository.
 
 Run the library checks with Python 3.9 or later:
 
@@ -167,8 +270,24 @@ Run the library checks with Python 3.9 or later:
 python3 scripts/validate.py
 ```
 
+## Community and feedback
+
+- Use the [Bug report](.github/ISSUE_TEMPLATE/bug_report.yml) or
+  [Feature request](.github/ISSUE_TEMPLATE/feature_request.yml) template.
+- Ask usage questions in [Discussions Q&A](https://github.com/METAXGTSEOSEM/wordpress-content-skills/discussions/categories/q-a).
+- Share a redacted output in [Show and tell](https://github.com/METAXGTSEOSEM/wordpress-content-skills/discussions/categories/show-and-tell).
+
+Remove credentials, customer names, private messages and unpublished product
+data before posting. An Issue or Discussion is not authorization to publish a
+page or change a live site.
+
 ## Updates and attribution
 
-Check [CHANGELOG.md](CHANGELOG.md) before updating installed Skills. Preserve existing Skill identifiers; add new modules rather than expanding the article workflow into unrelated tasks.
+Check [CHANGELOG.md](CHANGELOG.md) before updating installed Skills. Preserve
+existing Skill identifiers; add new modules rather than expanding the article
+workflow into unrelated tasks.
 
-The editorial process draws on evidence-based review and revision practices. Search guidance is checked against primary documentation, and language editing uses the specified external projects. See [THIRD_PARTY.md](THIRD_PARTY.md) for sources and [LICENSE](LICENSE) for the license covering this repository.
+The editorial process draws on evidence-based review and revision practices.
+Search guidance is checked against primary documentation, and language editing
+uses the specified external projects. See [THIRD_PARTY.md](THIRD_PARTY.md) for
+sources and [LICENSE](LICENSE) for the license covering this repository.
