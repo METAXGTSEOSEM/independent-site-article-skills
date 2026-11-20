@@ -1,6 +1,0 @@
-claim_id,claim,status,evidence,notes
-C1,The buyer should confirm load capacity for the intended load and duty cycle,Editorial guidance,S1,Do not state a capacity in the article
-C2,Platform size and access route must be checked against the actual work area,Editorial guidance,S2,No dimensions supplied
-C3,Safety depends on the complete installation and operating context,Editorial guidance,S1 S3,Do not claim one equipment category is inherently safer
-C4,The supplier should provide controls guarding documentation and service information,Editorial guidance,S1,Ask for the current datasheet and manual
-C5,Local requirements can affect inspection training and use,General statement,S3,Verify the applicable jurisdiction before publishing
